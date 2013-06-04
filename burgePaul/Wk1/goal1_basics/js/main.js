@@ -42,7 +42,8 @@
          - legal   var james007;
 */
 // variables
-console.log('------ variables ----------');
+alert("Hello World!");
+console.log("Hello World");
 
     //example 1: variables defined properly
 
