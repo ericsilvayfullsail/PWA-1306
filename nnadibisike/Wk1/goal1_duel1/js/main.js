@@ -23,30 +23,37 @@
 			player2health -= Math.floor(Math.random()*player1damage + player1damage*.5);
 			player1health -= Math.floor(Math.random()*player2damage + player2damage*.5);
 		
-			alert(player1name + ": " + player1health + " **ROUND " + round + " OVER** " + player2name + ": " + player2health);
+			
 			console.log("works");
 			
 			var winner = winnerCheck();
 			
-			if (winner > player1health){
-					alert("GAME OVER " + player2name + " Wins!!!");
-			}else if (winner > player2health) {
-				alert("GAME OVER " + player1name + " Wins!!!");
-			}else{
-				alert("No Winners...")
-				//break;
+			if (player2health < 1){
+					winner;
+					break;
+			}else if (player1health < 1){
+					winner;
+					break;
+			}else if (player1health < 1 && player2health < 1){
+				winner;
+				break;
+				console.log("over");
 			};
+			
+			alert(player1name + ": " + player1health + " **ROUND " + round + " OVER** " + player2name + ": " + player2health);
 			
 		}
 	}
 	
 	var winnerCheck = function(){
-		if(player1health == 0){
-			console.log("GAME OVER " + player2name + " Wins!!!");
-		}else if (player2health == 0) {
-			console.log("GAME OVER " + player1name + " Wins!!!");
-		}else if(player1health == 0 & player2health == 0){
-			console.log("No winner, saddness...");
+		console.log("check");
+		
+		if(player1health < 1){
+			alert("GAME OVER " + player2name + " Wins!!!");
+		}else if (player2health < 1) {
+			alert("GAME OVER " + player1name + " Wins!!!");
+		}else if(player1health < 1 && player2health < 1){
+			alert("No winner, saddness...");
 		}
 	}
 	
