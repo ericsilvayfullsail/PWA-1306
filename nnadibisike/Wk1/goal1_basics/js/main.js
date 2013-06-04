@@ -2,7 +2,7 @@
 
 // Alert Hello World
 alert("Hello Wolrd!");
-consloe.log ("Hello World");
+console.log ("Hello World");
 /* 
 	Variables
 
@@ -46,33 +46,45 @@ consloe.log ("Hello World");
 console.log('------ variables ----------');
 
     //example 1: variables defined properly
-
+	var name = "bisike", course = "PWA1", month = 3;
+	console.log("name", name + "/course:", course + "/month:", month);
 
     //example 2: variables not defined will = "undefined"
-
+	var name, course, month;
+	console.log("name", name + "/course:", course + "/month:", month);
 
     //example 3: a mix of variables defined and not definded
-
+	var name, course = "PWA1", month;
+	console.log("name", name + "/course:", course + "/month:", month);
 
     //example 4: declaring multiple variables at once w/ same value
-
-
+	var a = b = c = d = 10;
+	console.log("a", a + "/b", b + "/c", c + "/d", d);
 
 // string (definition, concatenation, escape character)
 console.log('------ strings ----------');
 
     //basic string
-
-
+	var name = "James Bond"
+	console.log(name)
     //string w/ escape charaters " \ "
-
-
+	var phrase = "He is in PWA1";
+	console.log("phrase 1:", phrase);
+	
+	var phrase = "I need some \"quotes\" to be here";
+	console.log("phrase 2:", phrase);
+	
+	var phrase = "He\ 's in PWA1";
+	console.log("phrase 3:", phrase);
     //string w/ escape charaters and mixed single/double quotes
-
+	var phrase = 'he\'s in' + "PWA1";
+	console.log("phrase 4:", phrase);
 
     //this example shows that all the "phase" vars above were overwritten
-
-
+	var x = 3;
+	var phrase = 'he\'s in PWA1' + x;
+	console.log("phrase 5:", phrase);
+	
 
 // numbers (definition, concatenation +, math, numbers & strings)
 console.log('------ numbers ----------');
@@ -80,19 +92,33 @@ console.log('------ numbers ----------');
     // arithmetic operators:  +, -, /, *, % (modulo)
 
     //basic math
-
+	var counter = 10;
+	console.log("basic math:", counter + 1);
+	
+	var x = 10;
+	console.log("counter:", x);
 
     //this is NOT the normal way to write this
-
-
+	--x;
+	console.log("counter:", x);
     //this is the normal way to write this
-
-
+	x--;
+	console.log("counter:", x);
     //quick operations with "assignment operator" +=, -=, *=, /=, %=
-
+	var x = 10;
+	var y = 5;
+	x += y;
+	console.log("+=:", x);
 
     //increment or decrement numbers by 1 with ++ or --
+	var myNum = 5;
+	console.log("myNum:", myNum);
+	
+	myNum++;
+	console.log("myNum:", myNum);
 
+	myNum--;
+	console.log("myNum:", myNum);
 
     //add a number to a string is always a string
 
