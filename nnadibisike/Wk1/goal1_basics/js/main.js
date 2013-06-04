@@ -1,7 +1,8 @@
 // self-executing function
 
 // Alert Hello World
-
+alert("Hello Wolrd!");
+consloe.log ("Hello World");
 /* 
 	Variables
 
