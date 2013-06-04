@@ -17,37 +17,35 @@ var ctr = 0;
 alert(fighter1 + ": " + fighter1health + " " + "Round:" + round[ctr] + " " + fighter2 + ": " + fighter2health);
 
 function fight(){
-	fighter2health -= fighter1damage + Math.ceil(Math.random()*15);
-	fighter1health -= fighter2damage + Math.ceil(Math.random()*10);
-}
-function game(){
 	for (var i = 0; i <= 12; i++) {
-		fight();
-		if(fighter1health <= 0 && fighter2health <= 0){
-		 	alert("It's a Tie!");
-		 	console.log("tie");
-		 	break;
-		 }
-		 else if(fighter1health <= 0){
-		 	alert(fighter2 + " wins!");
-		 	console.log("f1win");
-		 	break;
-		 }
-		 else if(fighter2health <=0){
-		 	alert(fighter1 + " wins!");
-		 	console.log("f2win");
-		 	break;
-		 }
-		 else if(ctr >= 10){
-			alert("Time Over!");
-			console.log("time");
-			break;	
-		 }
-		 else{
-		 	ctr++;
-		 	console.log(fighter1, fighter1health, "Round:", round[ctr], fighter2, fighter2health);
-		 	alert(fighter1 + ": " + fighter1health + " " + "Round:" + round[ctr] + " " + fighter2 + ": " + fighter2health);
-		 }
+		fighter2health -= fighter1damage + Math.ceil(Math.random()*15);
+		fighter1health -= fighter2damage + Math.ceil(Math.random()*10);
+		result = winnerCheck();
+		if(result != null){
+			alert(result);
+			break;
+		}
+		else{
+			ctr++;
+			alert(fighter1 + ": " + fighter1health + " " + "Round:" + round[ctr] + " " + fighter2 + ": " + fighter2health);
+		}
 	}
 }
-game();
+
+function winnerCheck(){
+	if(fighter1health <= 0 && fighter2health <= 0){
+		 	return "It's a tie!";
+		 }
+		 else if(fighter1health <= 0){
+		 	return fighter2 + " wins!";
+		 }
+		 else if(fighter2health <=0){
+		 	return fighter1 + " wins!";
+		 }
+		 else if(ctr >= 10){
+			return "Time Over!";
+		 }
+		 else{
+		 }
+}
+fight();
