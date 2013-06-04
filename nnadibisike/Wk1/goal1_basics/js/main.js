@@ -1,7 +1,8 @@
 // self-executing function
 
 // Alert Hello World
-
+alert("Hello Wolrd!");
+consloe.log ("Hello World");
 /* 
 	Variables
 
@@ -42,8 +43,7 @@
          - legal   var james007;
 */
 // variables
-alert("Hello World!");
-console.log("Hello World");
+console.log('------ variables ----------');
 
     //example 1: variables defined properly
 
