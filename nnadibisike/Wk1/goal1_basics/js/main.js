@@ -379,7 +379,10 @@ console.log('------ conditionals ----------');
     - ? = perform the next statement if true
     - : = false (perform the new statement after the :)
  */
-
+	var weather = 'Sunny';
+	
+	var mood = (weather == 'Sunny' ? 'happy': 'sad');
+	console.log("mood:", mood);
 
 
 /*******************************************
@@ -393,7 +396,10 @@ console.log('------ conditionals ----------');
         - else student1 = 'sad'
     4.  console.log the results
  ********************************************/
-
+	var temp = 60;
+	var student1 = (weather == 'Sunny' ? 'happy' : ((temp >= 80) ? 'content' :'sad'));
+	console.log("Nested ternay weather:", student1)
+	
 
 
 // Functions: (definition, whitespace, invocation, arguments, returns)
@@ -479,7 +485,22 @@ console.log('------Functions ----------');
 
 
 
-
+	var myCtr = 1;
+	var myCounter = function(){
+		myCtr++;
+		console.log('counter:', myCtr);
+	};
+	
+	myCounter();
+	
+	var value1 = 1;
+	var value2 = 2;
+	
+	var myFn = function(var1, var2){
+		console.log('function number:', var1 + var2)
+	};
+	
+	myFn(value1,value2)
 /*******************************************
  STUDENT ACTIVITY 6: (5 min ONLY)
 
