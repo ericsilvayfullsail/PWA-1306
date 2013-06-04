@@ -1,5 +1,5 @@
 /*
-	PWA1 JavaScript Practice
+    Week1 / Goal2 JavaScript Practice
 */
 
 // scope wrapper (self executing function)
@@ -57,6 +57,8 @@ console.log('------Recap Variables ----------');
 
 		== 	is the equality operator, does not check against data type
 		=== is the identity operator, checks data type match - will use this
+
+        Best Practice:  Use identity operator 99% of the time
 */	
 
 console.log('------Recap Conditionals ----------');
@@ -121,6 +123,15 @@ console.log('------Recap Conditionals ----------');
 
 console.log('------Recap Functions ----------');
 
+    //	1.  BASIC FUNCTION:
+
+
+
+    //	2.  ANONYMOUS FUNCTION
+
+
+
+    //Anonymous passing arguments
 
 
 
@@ -142,6 +153,20 @@ var str2 = 'JavaScript loves me!';
 var abc = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 
 
+//STUDENT ACTIVITY 1:
+// Use substr() to console log 'JavaScript!' from str1.
+
+
+//STUDENT ACTIVITY 2:
+// Use substring() to console log 'JavaScript' from str2.
+
+
+//STUDENT ACTIVITY 3:
+// 1. Use toLowerCase() to console log the str1 all in lowercase letters.
+// 2. Use toUpperCase() to console log the str1 all in uppercase letters.
+
+
+
 /*
 	===============================================
 	MORE:  Numbers
@@ -150,6 +175,9 @@ var abc = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 
 console.log('------ MORE Numbers ----------');
 
+
+//STUDENT ACTIVITY 4:
+// Use ??? to console dec with two decimals.
 
 
 /*
@@ -173,6 +201,7 @@ console.log('------ MORE Numbers ----------');
 
 console.log('------ MORE Booleans ----------');
 
+
 	
 /*
 	===============================================
@@ -188,13 +217,13 @@ var arr3 = ['apple', 'orange', 50393, 7.324];
 	
 
 /*******************************************
-
-//STUDENTS ACTIVITY:
+STUDENTS ACTIVITY 5:
 
 1.  combine the firstQtr and secondQtr arrays below and console.log the results
 2.  combine ALL three arrays below and console.log the results
+	- store this array in a variable called "combined".
 
-Use the combined variable for the below:
+Use the "combined" variable for the below:
 3.  join the array elements into a string and console.log the results
 4.  remove the last element of an array and console.log the results and the new array
 5.  use array "secondHalfYr", and reduce the array to "Sept" & "Oct" 
@@ -241,7 +270,7 @@ console.log('------ MORE Conditionals - Switch ----------');
 
 /*******************************************
 
-	//STUDENTS TO DO:
+ STUDENTS ACTIVITY 6:
 
 	1.  create a "Switch" conditional that does the following:
 		a.  have a var named "age" initialized to a number
@@ -396,14 +425,14 @@ console.log('------For Loop ----------');
 
 /*******************************************
 
-//STUDENTS TO DO:
+ STUDENTS ACTIVITY 7:
 
 	1.  create an array with the following heros 
 		(Superman, Batman, Wolverine, Iceman)
 
-		a.  create a for loop using the slower method
+		a.  create a for loop using the slower method (3 parameters)
 			- in the loop just console.log the values
-		b.  create a for loop using the faster method
+		b.  create a for loop using the faster method (4 parameters)
 			- in the loop just console.log the values			
 
 ********************************************/
@@ -411,8 +440,7 @@ console.log('------For Loop ----------');
 
 
 /*******************************************
-
-	//STUDENTS TO DO (MUST DO):
+ STUDENTS ACTIVITY 8:
 
 	1.  create a function named 'avgNumbers'
 		- accept 1 parameter that will be an array of unlimited numbers
@@ -449,6 +477,31 @@ console.log('------For Loop ----------');
 		- return the array
 		- output the answer outside of the function
 ********************************************/
+console.log('------ FUNCTION DEVELOPMENT ----------');
+
+
+/*******************************************
+    STUDENTS ACTIVITY 9: (More Practice):
+
+     1.  output "name" in lowercase
+     2.  output "name" in uppercase
+     3.  output the character in the 3rd index
+     4.  output the index number where the work "nice" us located
+     5.  output the characters in "name" between indexes 10 & 14
+     6.  create a array variable using "name", and output the array
+     7.  output the item in index 4
+     8.  join all elements of the array separated by a "|"
+     9.  output the array in reverse order
+     10. output the current array without the first item
+     11. output the array with a new item at the end of the array
+     - add "NEW VALUE"
+     12. output the array without "NEW VALUE"
+********************************************/
+
+    console.log('------ More PRACTICE ----------');
+
+    var name = 'This is a nice change of pace';
+
 
 
 })();
