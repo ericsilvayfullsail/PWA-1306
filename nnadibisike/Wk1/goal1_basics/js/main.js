@@ -120,9 +120,12 @@ console.log('------ numbers ----------');
 	myNum--;
 	console.log("myNum:", myNum);
 
+	var x = 10;
+	var y = 3;
+	console.log("Reminder:", x%y);
     //add a number to a string is always a string
-
-
+	var myStr = "6" / 2;
+	console.log("String / Number:", myStr);
     //other math operations will result in a number
 
 
@@ -166,7 +169,8 @@ console.log('------ arrays ----------');
     2.  console.log the sum of all the numbers in an array
 
  ********************************************/
-
+	var myArr = [10,50,100,200];
+	console.log("sum of all:", myArr[0] + myArr[1] + myArr[2] + myArr[3]);
 
 
 /*******************************************
@@ -183,7 +187,10 @@ console.log('------ arrays ----------');
     3. output array items using string concatenation
 
  ********************************************/
-
+	var myArray = [];
+	myArray.push("baseball", "football", "basketball");
+	console.log( myArray[0] + "," + myArray[1] + "," + myArray[2]);
+	console.log(myArray);
 
  // conditionals: (definition, indexing, math, if, if-else, if-else if, ternary)
 console.log('------ conditionals ----------');
@@ -218,7 +225,8 @@ console.log('------ conditionals ----------');
         a true or false boolean
     - conditions can be used just about anywhere, not just in conditionals and loops
 */
-
+	var myVar = 5 > 3;
+	console.log("is greater than 3:", myVar);
 
 
 /*
@@ -235,7 +243,9 @@ console.log('------ conditionals ----------');
             //block of code or ‘actions’
          };
 */
-
+	if(5 > 3){
+		console.log("5>3: True")
+	}
 
 
 /*
@@ -249,7 +259,21 @@ console.log('------ conditionals ----------');
 */
 
     // == performs a loose check of two values
-
+	if("1" == 1){
+		console.log("'1' == 1, True")
+	}
+	
+	if("1" == 1){
+		console.log("1 == 1, True")
+	}
+	
+	if("1" === 1){
+		console.log("'1' === 1, False")
+	}
+	
+	if("1" !== 1){
+		console.log("'1'!== 1, True")
+	}	
 
 
 /* ==============================================================
