@@ -502,7 +502,7 @@ console.log('------Functions ----------');
      var value1 = 1;
      var value2 = 2;
      var myFm = function(val1, val2){console.log("function number: ", val1+ val2);};
-     function(value1, value2)
+     myFm(value1, value2);
 
 /*******************************************
  STUDENT ACTIVITY 6: (5 min ONLY)
