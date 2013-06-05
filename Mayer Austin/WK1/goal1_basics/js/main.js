@@ -1,9 +1,8 @@
 // self-executing function
 
 // Alert Hello World
-// alert("Hello World!");
-console.log("Hello World!");
-
+  alert("Hello world!");
+  console.log("hello world!");
 /* 
 	Variables
 
@@ -47,47 +46,51 @@ console.log("Hello World!");
 console.log('------ variables ----------');
 
     //example 1: variables defined properly
-    var name = "james", course = "PWA1", month = 3;
-    console.log("Name: ", + name + "/Course: " + course + "/Month: " + month);
+
+      var name = "austin", course = "Pwa1", month = 3;
+       console.log("name", name + "/course:", course + "/month", month);
 
     //example 2: variables not defined will = "undefined"
-    var name, course, month;
-    console.log("Name", name + " /course", course + "/month ", month);
+
+      var name, course, month;
+        console.log("name", name + "/course:", course + "/month", month);
 
     //example 3: a mix of variables defined and not definded
-    var name, course = "PWA1", month;
-    console.log("name:", name + "/course: ", course + "/month: ", month);
+
+       var name, course = "Pwa1", month;
+        console.log("name", name + "/course:", course + "/month", month);
 
     //example 4: declaring multiple variables at once w/ same value
-    var a = b = c = d = 10;
-    console.log("a ", a + " / b ", b + " / c ", c + " / d ", d);
+
+      var a = b = c = d =10;
+        console.log("a", a + "/b", b + "/c", c + "/d", d);
 
 
 // string (definition, concatenation, escape character)
 console.log('------ strings ----------');
 
     //basic string
-    var name = "James Bond";
-    console.log(name);
+      var name = "austin mayer";
+        console.log(name);
 
     //string w/ escape charaters " \ "
-    var phrase = "He's in PWA1";
-    console.log("phrase 1: ", phrase);
+      var phrase = "He is in Pwa1";
+       console.log("phrase 1:",phrase);
 
-    var phrase = "I need some \"quotes\" to be here.";
-    console.log("phrase 2: ", phrase);
+     var phrase = "I need some \"quotes\" to be here.";
+      console.log("phrase 2:", phrase);
 
-    var phrase = "He\'s in PWA1";
-    console.log("phrase 3: ", phrase);
+     var phrase = "He\'s in Pwa1";
+      console.log("phrase 3:",phrase);
 
     //string w/ escape charaters and mixed single/double quotes
-    var phrase = "He\'s in " + "PWA1";
-    console.log("phrase 4: ", phrase);
+      var phrase = 'he\'s in' + "Pwa1";
+        console.log("phrase 4:", phrase);
 
     //this example shows that all the "phase" vars above were overwritten
-    var x = 3;
-    var phrase = "He\'s in PWA1" + x;
-    console.log("phrase 5: ", phrase);
+       var x=3;
+        var phrase = 'he\'s in' + "Pwa1"+ x;
+        console.log("phrase 5:", phrase);
 
 
 // numbers (definition, concatenation +, math, numbers & strings)
@@ -96,46 +99,41 @@ console.log('------ numbers ----------');
     // arithmetic operators:  +, -, /, *, % (modulo)
 
     //basic math
-    var counter = 10;
-    console.log("basic math: ", counter + 1);
+        var counter = 10;
+         console.log("basic math:", counter + 1);
 
-    var x = 10;
-    console.log("counter: ", x);
-
+        var x = 10;
+         console.log("counter: ", x);
     //this is NOT the normal way to write this
-    --x;
-    console.log("counter--: ", x);
+        --x;
+            console.log("counter--: ", x);
 
     //this is the normal way to write this
-    x--;
-    console.log("counter--: ", x);
+        x--;
+            console.log("counter--: ", x);
 
     //quick operations with "assignment operator" +=, -=, *=, /=, %=
-    var x = 10;
-    var y = 5;
-    x += y;
-    console.log("+=: ", x);
+        var x = 10;
+        var y = 5;
+        x += y;
+         console.log("+=;", x);
 
     //increment or decrement numbers by 1 with ++ or --
-    var myNum = 5;
-    console.log("myNum = ", myNum); 
+         var myNum = 5;
+            console.log("myNum = ", myNum);
+            myNum++;
+            console.log("myNum = ", myNum);
+            myNum--;
+            console.log("myNum = ", myNum);
 
-    myNum++;
-    console.log("myNum = ", myNum);
-
-    myNum--;
-    console.log("myNum = ", myNum);
-
-    var x = 10;
-    var y = 3;
-    console.log("Remainder: ", x%y);
 
     //add a number to a string is always a string
-    var myStr = "6" + 2;
-    console.log("Number + Strings: ", myStr);
+          var myStr = "6" + 2;
+            console.log("My number + Strings: ", myStr);
 
     //other math operations will result in a number
-
+            var myStr = "6" / 2;
+            console.log("My number / Strings: ", myStr);
 
     //order of operations: ( ), *, /, +, -
 
@@ -176,11 +174,20 @@ console.log('------ arrays ----------');
     1.  create an array with 4 numbers 10, 50, 100, 200
     2.  console.log the sum of all the numbers in an array
 
- ********************************************/
- var anArray = [10, 50, 100, 200];
- console.log("The sum of all numbers:", anArray[0] + anArray[1] + anArray[2] + anArray[3]);
 
-/*******************************************
+ ********************************************/
+   var fourNumbers = new Array();
+     fourNumbers [0] =  10  ;
+     fourNumbers [1] =  50  ;
+     fourNumbers [2] =  100 ;
+     fourNumbers [3] =  200 ;
+   var sum;
+     sum = fourNumbers [0]+fourNumbers [1]+fourNumbers [2]+fourNumbers [3];
+
+   console.log(sum);
+
+
+               /*******************************************
 
  STUDENT ACTIVITY 2:
 
@@ -194,13 +201,12 @@ console.log('------ arrays ----------');
     3. output array items using string concatenation
 
  ********************************************/
-var myArray = [];
-// myArray[0] = "baseball";
-// myArray[1] = "football";
-// myArray[2] = "basketball";
-myArray.push("baseball", "football", "basketball");
-console.log(myArray[0] + ", " + myArray[1] + ", " + myArray[2]);
+    var myArray = new Array();
+        myArray [0] = "baseball" ;
+        myArray [1] = "football" ;
+        myArray [2] = "basketball" ;
 
+    console.log(myArray[0]+myArray[1]+myArray[2]) ;
 
  // conditionals: (definition, indexing, math, if, if-else, if-else if, ternary)
 console.log('------ conditionals ----------');
@@ -235,8 +241,8 @@ console.log('------ conditionals ----------');
         a true or false boolean
     - conditions can be used just about anywhere, not just in conditionals and loops
 */
-    var myVar = 5 > 3;
-    console.log("is 5 greater than 3: ", myVar);
+
+
 
 /*
      most common comparison operators:
@@ -252,9 +258,8 @@ console.log('------ conditionals ----------');
             //block of code or ‘actions’
          };
 */
-    if(5 > 3) {
-        console.log("5 > 3: True!");
-    }
+
+
 
 /*
     - a common mistake is to use the assignment operator  = instead of the ==
@@ -267,21 +272,7 @@ console.log('------ conditionals ----------');
 */
 
     // == performs a loose check of two values
-    if("1" == 1) {
-        console.log("1 == 1, True");
-    };
 
-    if(1==1) {
-        console.log("1 == 1, True");
-    };
-
-    if("1" === 1) {
-        console.log("1 === 1, False");
-    };
-
-    if("1" != 1) {
-      console.log("1 != 1, True");  
-    };
 
 
 /* ==============================================================
@@ -346,7 +337,12 @@ console.log('------ conditionals ----------');
  GOAL
     1. learn if - else
  ********************************************/
+  var weather = "cloudy";
+    var bobsMood;
+    if (weather == "sunny") { bobsMood = "Bob is Happy!";}
+    else {bobsMood = "Bob is Sad :(";}
 
+    console.log(bobsMood) ;
 
 
 
@@ -364,7 +360,17 @@ console.log('------ conditionals ----------');
         - else bobsMood = "sad"
     3.  console.log the results after each conditional
  ********************************************/
+    var waves = 10;
 
+    if (weather == "sunny" && waves == 10){bobsMood = "Pumped!"}
+    else if (weather == "sunny" && waves == 9 || 8 || 7 || 6 || 5){bobsMood = "mellow"}
+    else if (weather == "sunny" && waves <=4){bobsMood = "bummed"}
+    else if (weather == "overcast" && waves == 10 || 9 || 8 || 7 ){bobsMood = "Jacked UP!"}
+    else if (weather == "overcast" && waves == 6 || 5 || 4 || 3){bobsMood = "totally bummed"}
+    else if (weather == "overcast" && waves <=2){bobsMood = "not happy"}
+    else {bobsMood = "sad"}
+
+    console.log("Bobs Mood" + bobsMood + " and the weather is:" + weather);
 
 
 
@@ -401,10 +407,12 @@ console.log('------ conditionals ----------');
         - else student1 = 'sad'
     4.  console.log the results
  ********************************************/
-var temp = 60;
-var weather = "Sunny";
-var student1 = (weather == "Sunny" ? "happy" : ((temp >= 80) ? "content" : "sad"));
-console.log("Nested ternary weather: ", student1);
+     var temp = 60;
+     var student1;
+     var mood = (weather == "sunny " ? student = "happy" :((temp>=80) ?  "content" : "sad"));
+
+        console.log("nested ternary opp", mood);
+
 
 
 // Functions: (definition, whitespace, invocation, arguments, returns)
@@ -448,14 +456,13 @@ console.log('------Functions ----------');
 
      - type the below as an example
         functionName();
- *****************************/
- // var myCtr = 1;
- // var myCounter = function() {
- //    myCtr++;
- //    console.log("counter = ", myCtr);
- // };
- // myCtr();
+ *****************************
+ */
 
+    var myCtr = 1;
+    var myCounter = function(){myCtr++; console.log("counter = ",myCtr);};
+
+     myCounter();
 
  /*
     function literal: passing data into a function
@@ -491,13 +498,11 @@ console.log('------Functions ----------');
     - in the function - var1 and var2 are referred to as parameters of the function
     - items inside our function we call on these variables.. such as:
  */
-var value1 = 1;
-var value2 = 2;
-var myFn = function(var1, var2) {
-    console.log("function number:", var1 + var2);
-};
-myFn(value1, value2);
 
+     var value1 = 1;
+     var value2 = 2;
+     var myFm = function(val1, val2){console.log("function number: ", val1+ val2);};
+     myFm(value1, value2);
 
 /*******************************************
  STUDENT ACTIVITY 6: (5 min ONLY)

@@ -42,19 +42,25 @@
          - legal   var james007;
 */
 // variables
-alert("Hello World!");
-console.log("Hello World");
+console.log('------ variables ---------')
+//alert("Hello World!");
+//console.log("Hello World");
 
     //example 1: variables defined properly
-
+    var name1 = "paul", course1 = "PWA1", month1 = 3;
+    console.log("name", name1 + "/course:", course1 + " /month:", month1);
 
     //example 2: variables not defined will = "undefined"
-
+    var name2, course2, month2;
+    console.log("name", name2 + "/ course:", course2 + "/month: ", month2);
 
     //example 3: a mix of variables defined and not definded
-
+    var name3, course3 = "PWA1", month3;
+    console.log("name:", name3 + "/course: ", course3 + "/ month: ", month3);
 
     //example 4: declaring multiple variables at once w/ same value
+    var a = b = c = d = 10;
+    console.log("a", a + "/b", b + "/c", c + "/d", d);
 
 
 
@@ -62,30 +68,52 @@ console.log("Hello World");
 console.log('------ strings ----------');
 
     //basic string
-
+    var name = "James Bond";
+    console.log(name);
 
     //string w/ escape charaters " \ "
+    var phrase1 = "He's in PWA1";
+    console.log("phrase 1:", phrase1);
 
+    var phrase2 = "I need some \"quotes\" to be here";
+    console.log(phrase2);
+
+    var phrase3 = "He\'s in PWA1";
+    console.log("Phrase 3:", phrase3);
 
     //string w/ escape charaters and mixed single/double quotes
 
+    var phrase4 = 'he\'s in' + "PWA1";
+    console.log("phrase 4: ", phrase4);
 
     //this example shows that all the "phase" vars above were overwritten
 
+    var x = 3;
+    var phrase = 'he\'s in PWA1' + x;
+    console.log("phrase 5: ", phrase);
 
 
 // numbers (definition, concatenation +, math, numbers & strings)
 console.log('------ numbers ----------');
 
     // arithmetic operators:  +, -, /, *, % (modulo)
+    var counter = 10;
+    console.log("basic math: ", counter + 1);
+
+    var y = 10;
+    console.log("basic math: ", y);
 
     //basic math
 
 
     //this is NOT the normal way to write this
 
+    --y;
+    console.log(y);
 
     //this is the normal way to write this
+    y--;
+    console.log(y);
 
 
     //quick operations with "assignment operator" +=, -=, *=, /=, %=
@@ -141,6 +169,9 @@ console.log('------ arrays ----------');
 
  ********************************************/
 
+ var burgeArray = [10,50,100,200];
+
+ console.log(burgeArray[0] + burgeArray[1] + burgeArray [2] + burgeArray[3]);
 
 
 /*******************************************
@@ -157,6 +188,15 @@ console.log('------ arrays ----------');
     3. output array items using string concatenation
 
  ********************************************/
+
+
+ var myArray = new Array();
+
+ myArray[0] = "basketball";
+ myArray[1] = "football";
+ myArray[2] = "baseball";
+
+ console.log(myArray[0] + myArray[1] + myArray[2]);
 
 
  // conditionals: (definition, indexing, math, if, if-else, if-else if, ternary)
@@ -224,6 +264,9 @@ console.log('------ conditionals ----------');
 
     // == performs a loose check of two values
 
+
+    // var testVar = Math.floor(Math.random * 10);
+    // console.log(testVar);
 
 
 /* ==============================================================
@@ -344,6 +387,10 @@ console.log('------ conditionals ----------');
     4.  console.log the results
  ********************************************/
 
+var weather = "Sunny";
+var temp = 60;
+var student1 = (weather = "Sunny" ? "happy" : ((temp >= 80) ? "content" : sad));
+console.log(student1);
 
 
 // Functions: (definition, whitespace, invocation, arguments, returns)
@@ -387,8 +434,16 @@ console.log('------Functions ----------');
 
      - type the below as an example
         functionName();
- *****************************
+ *****************************/
 
+
+var myCtr = 1;
+var myCounter = function(){
+    myCtr++;
+    console.log("counter = ", myCtr);
+};
+myCounter();
+myCounter();
 
 
 
@@ -427,6 +482,14 @@ console.log('------Functions ----------');
     - items inside our function we call on these variables.. such as:
  */
 
+var value1 = 1;
+var value2 = 2;
+
+var myFn = function(var1, var2){
+    console.log("function number: ", + (var1 + var2));
+};
+
+myFn(value1, value2);
 
 
 
