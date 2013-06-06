@@ -8,8 +8,10 @@ var fighter2 = "Green Fairy";
 var fighter2health = 100;
 var fighter2damage = Math.round(Math.random() * 9);
 
+var round = 0;
+
 function fight(){
-	for( var i = 10; i>0; i--){
+	for(var i = 0; i <= 11; i++){
 		var onePlan = Math.random() * fighter1damage;
 		var twoPlan = Math.random() * fighter2damage;
 	
@@ -18,39 +20,37 @@ function fight(){
 		
 		fighter1health = twoHit;
 		fighter2health = oneHit;
-	
-		alert("After the attack" + fighter1 + "health:" + fighter1health + "," + fighter2 + "health:" + fighter2health);
+		
+		result = winnerCheck()
+		if(result != null){
+			alert(result);
+			break
+		}
+		else{
+			round++;
+			alert("After the attack: " + fighter1 + "health:" + fighter1health + "," + fighter2 + "health:" + fighter2health);
+		}
+		
 	}
 
 }
 
 function winnerCheck(){
-	var result = "No winner!"
 	
 	if(fighter1health <= 0 && fighter2health <= 0){
 		return "its a tie";
 	}
-	else if(fighter1health > fighter2health){
-		return fighter1 "has won!";
+	else if(fighter1health <= 0){
+		return fighter2 + "has won!";
 	}
-	else if(fighter2health > fighter1health){
-		return fighter2 "has won!";
+	else if(fighter2health <= 0){
+		return fighter1 + "has won!";
+	}
+	else if(round >= 10){
+		return "game over!"
 	}
 	else{
-		return result;
-	}
+		}
 }
-
-// if(fighter1health <= 0 && fighter2health <= 0){
-	// console.log("Both fighters have died");
-// }
-// 
-// if(fighter2health > fighter1health){
-	// console.log(fighter2, "has won the battle!");
-// }
-// 
-// else{
-	// console.log(fighter1, "has won the battle!");
-// }
-
 fight();
+
