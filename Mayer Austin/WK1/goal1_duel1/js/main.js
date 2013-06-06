@@ -5,7 +5,7 @@
  * Time: 3:38 PM
  * To change this template use File | Settings | File Templates.
  */
-
+//Austin Mayer
 var kabalHP = 100;
 var kratosHP = 100;
 var kabalAttack;
