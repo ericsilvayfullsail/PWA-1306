@@ -11,7 +11,6 @@ var playerOneHalfDamage = playerOne[2] / 2;
 //Player Two Info
 var playerTwo = ["Megatron", 100, 20];
 var playerTwoHalfDamage = playerTwo[2] / 2;
-console.log(playerOne);
 
 var roundNum = 0;
 
@@ -54,3 +53,4 @@ var winnerCheck = function() {
     }
 };
 winnerCheck();
+//test
