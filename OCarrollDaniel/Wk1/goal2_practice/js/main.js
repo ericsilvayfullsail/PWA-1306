@@ -125,11 +125,24 @@ console.log('------Recap Conditionals ----------');
 console.log('------Recap Functions ----------');
 
     //	1.  BASIC FUNCTION:
+    /*
+    var myctr = 1;
+    function myCounter()
+    {
+        myctr++;
+        console.log('counter = ', myctr);
 
+    }
+    */
 
 
     //	2.  ANONYMOUS FUNCTION
-
+     var myctr = 1;
+    var myCounter = function()
+    {
+        myctr++;
+        console.log('counter = ', myctr);
+    };
 
 
     //Anonymous passing arguments
@@ -153,19 +166,24 @@ var str1 = 'I love JavaScript! ';
 var str2 = 'JavaScript loves me!';
 var abc = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 
+    console.log(str1.charAt(4));
+    console.log(str2.indexOf('m'));
+    console.log(str1.length);
+    console.log(abc.split(""));
 
 //STUDENT ACTIVITY 1:
 // Use substr() to console log 'JavaScript!' from str1.
-
+console.log(str1.substr(7,11));
 
 //STUDENT ACTIVITY 2:
 // Use substring() to console log 'JavaScript' from str2.
-
+console.log(str2.substring(0,10));
 
 //STUDENT ACTIVITY 3:
 // 1. Use toLowerCase() to console log the str1 all in lowercase letters.
 // 2. Use toUpperCase() to console log the str1 all in uppercase letters.
-
+ console.log(str1.toLowerCase());
+ console.log(str1.toUpperCase());
 
 
 /*
@@ -175,11 +193,16 @@ var abc = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 */
 
 console.log('------ MORE Numbers ----------');
+ var number = 457896;
+ var dec = 33.123456;
 
+ console.log(number.toExponential(2));
+
+ console.log(dec.toPrecision());
 
 //STUDENT ACTIVITY 4:
 // Use ??? to console dec with two decimals.
-
+  console.log(dec.toFixed(2));
 
 /*
 	===============================================
@@ -201,7 +224,16 @@ console.log('------ MORE Numbers ----------');
 */
 
 console.log('------ MORE Booleans ----------');
-
+  var x = 9 * 'k';
+  console.log(x);
+  if(x)
+  {
+      console.log("It's true, the value is: ", x);
+  }
+  else
+  {
+      console.log("It's false, the value is: ", x);
+  }
 
 	
 /*
@@ -215,7 +247,23 @@ console.log('------ MORE Arrays ----------');
 var arr1 = [1, 2, 3, 4, 5, 6, 7];
 var arr2 = ['a', 'b', 'c', 'd', 'e'];
 var arr3 = ['apple', 'orange', 50393, 7.324];
-	
+
+    console.log(arr2.indexOf('c'));
+
+    console.log(arr2.join(','));
+
+    var element = arr1.pop();
+    console.log(element);
+
+    arr2.push('f');
+    console.log(arr2);
+
+    console.log(arr1.reverse());
+
+    console.log(arr1.splice(4,2));
+    console.log(arr1);
+
+
 
 /*******************************************
 STUDENTS ACTIVITY 5:
@@ -269,6 +317,38 @@ console.log('------ MORE Operators - typeof() ----------');
 
 console.log('------ MORE Conditionals - Switch ----------');
 
+    console.log(typeof 5);
+    console.log(typeof "Hi");
+
+    var str1 = "hello";
+    console.log(typeof str1);
+
+    console.log(typeof true);
+
+    var fruit = "Chicken";
+
+    switch (fruit){
+
+        case "Oranges":
+            console.log("Oranges are $0.59 a pound.");
+            break;
+        case "Apples":
+            console.log("Apples are $0.32 a pound.");
+            break;
+        case "Bananas":
+            console.log("Bananas are $0.48 a pound.");
+            break;
+        case "Pineapples":
+            console.log("Pineapples are $0.92 a pound.");
+            break;
+        case "Strawberries":
+            console.log("Strawberries are $0.59 a pound.");
+            break;
+        default:
+            console.log("Sorry, all out of ", fruit);
+
+    }
+
 /*******************************************
 
  STUDENTS ACTIVITY 6:
@@ -281,7 +361,26 @@ console.log('------ MORE Conditionals - Switch ----------');
 
 
 ********************************************/
+      var mood = "sour";
+        switch(mood)
+        {
+            case "sour":
+                console.log("Why are you being so sour?!");
+                break;
+            case "happy":
+                console.log("Gross, why are you always so happy?");
+                break;
+            case "sad":
+                console.log("Who peed in your cherrios?");
+                break;
+            case "angry":
+                console.log("Calm down, dawg!");
+                break;
+            default:
+                  console.log("I've never heard of that emotion, weirdo.");
 
+
+        }
 
 
 /*
@@ -296,7 +395,13 @@ console.log('------ MORE Conditionals - Switch ----------');
 */
 
 console.log('------ MORE Functions ----------');
-
+   /*
+    var bondsCars = function()
+    {
+        return[ 'ferrari', 'lambo', 'vwBug'];
+        var cars = bondsCars();
+        console.log("James Bond's cars: ",cars);
+    };   */
 
 	/* 
 		Self Executing Functions
@@ -345,7 +450,12 @@ console.log('------ MORE Functions ----------');
 			}			
 */
 console.log('------ While / Loop ----------');
-
+  var numOfBeers = 10;
+  while(numOfBeers > 0)
+  {
+      console.log(numOfBeers + ' kegs on the wall.');
+      numOfBeers--;
+  }
 	
 /*
 	===============================================
@@ -383,7 +493,8 @@ console.log('------For Loop ----------');
 		- in the example below, the last index of the array would be 4 
 			- the  .length property returns the count, which would be 5	
 	*/	
-
+     var myNums = [1,2,3,4,5];
+    console.log('length: ', myNums.length);
 
 	/* 
 		using the for() loop with .length
@@ -403,7 +514,10 @@ console.log('------For Loop ----------');
 		- depending on the size of an array, it can be more efficient to 
 			save the array length in a variable, inside the first statement
 	*/
-
+    for (var i = 0, j=myNums.length; i < j; i++)
+    {
+        console.log('1. Length in for loop: ', myNums[i]);
+    }
 
 	/*
 		BREAK...
@@ -412,7 +526,15 @@ console.log('------For Loop ----------');
 		- by using the "break" statement, any loop will stop running at the 
 			break point, and perform no more iterations
 	*/
-
+     for (i = 0, j = myNums.length; i<j; i++)
+     {
+       if(i===3)
+       {
+           console.log("testing out the break and it broke.");
+           break;
+       }
+         console.log('2. Length in for loop: ', myNums[i]);
+     }
 
 
 	/*
@@ -428,7 +550,7 @@ console.log('------For Loop ----------');
 
  STUDENTS ACTIVITY 7:
 
-	1.  create an array with the following heros 
+	1.  create an array with the following heroes
 		(Superman, Batman, Wolverine, Iceman)
 
 		a.  create a for loop using the slower method (3 parameters)
@@ -437,7 +559,17 @@ console.log('------For Loop ----------');
 			- in the loop just console.log the values			
 
 ********************************************/
+ var heroes = ['Superman', 'Batman', 'Wolverine', 'Iceman'];
 
+    for(i = 0; i < heroes.length; i++)
+    {
+        console.log(heroes[i]);
+    }
+
+    for(i = 0, max = heroes.length; i < max; i++)
+    {
+        console.log(heroes[i]);
+    }
 
 
 /*******************************************
@@ -461,6 +593,25 @@ console.log('------For Loop ----------');
     console.log('------ More PRACTICE ----------');
 
     var name = 'This is a nice change of pace';
+    console.log(name.toLowerCase());
+    console.log(name.toUpperCase());
+    console.log(name.charAt(3));
+    console.log(name.indexOf("nice"));
+    console.log(name.substring(10,14));
+
+   var nameArr = name.split(" ");
+    console.log(nameArr);
+
+    console.log(nameArr[4]);
+    console.log(nameArr.join("|"));
+    console.log(nameArr.reverse());
+    console.log(nameArr.slice(1));
+    console.log(nameArr);
+    console.log(nameArr.push("NEW VALUE"));
+    console.log(nameArr);
+
+    nameArr.pop();
+    console.log(nameArr);
 
 
 
