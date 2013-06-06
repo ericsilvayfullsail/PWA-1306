@@ -28,32 +28,35 @@
 			
 			var winner = winnerCheck();
 			
-			if (player2health < 1){
-					winner;
-					break;
-			}else if (player1health < 1){
-					winner;
-					break;
-			}else if (player1health < 1 && player2health < 1){
-				winner;
+			if (winner != null){
+				alert(winner);
 				break;
-				console.log("over");
+			}else {
+				alert(player1name + ": " + player1health + " **ROUND " + round + " OVER** " + player2name + ": " + player2health);
 			};
 			
-			alert(player1name + ": " + player1health + " **ROUND " + round + " OVER** " + player2name + ": " + player2health);
+			
 			
 		}
 	}
 	
 	var winnerCheck = function(){
 		console.log("check");
-		
-		if(player1health < 1){
-			alert("GAME OVER " + player2name + " Wins!!!");
-		}else if (player2health < 1) {
-			alert("GAME OVER " + player1name + " Wins!!!");
-		}else if(player1health < 1 && player2health < 1){
-			alert("No winner, saddness...");
+		 var win = "No Winner";
+		 
+		if(player1health < 1)
+		{
+			return "GAME OVER " + player2name + " Wins!!!";
+		}
+		else if (player2health < 1) 
+		{
+			return "GAME OVER " + player1name + " Wins!!!";
+		}
+		else if(player1health < 1 && player2health < 1){
+			return win;
+		}
+		else if(round >= 10){
+			return "Time ran out!";
 		}
 	}
 	
