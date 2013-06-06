@@ -11,22 +11,29 @@ var kratosHP = 100;
 var kabalAttack;
 var kratosAttack;
 var counter = 0;
+var outcome;
 
 function checkWin(kraHP, kabHP)
     {
         if (kraHP <= 0 && kabHP <= 0)
         {
             alert("Double KO!");
+            outcome = "Double KO!";
+            document.getElementById("outcome").innerHTML = outcome;
             kabalHP=100;kratosHP=100;counter=0;
         }
         else if(kabHP <= 0)
         {
             alert("Fatality! Kratos wins!");
+            outcome = "Fatality! Kratos wins!";
+            document.getElementById("outcome").innerHTML = outcome;
             kabalHP=100;kratosHP=100;counter=0;
         }
          else if (kraHP <= 0)
         {
             alert("Fatality! Kabal wins!");
+            outcome = "Fatality! Kabal wins!";
+            document.getElementById("outcome").innerHTML = outcome;
             kabalHP=100;kratosHP=100;counter=0;
         }
 
@@ -40,15 +47,16 @@ function checkWin(kraHP, kabHP)
         kabalHP = kabalHP - kabalAttack;
         kratosHP = kratosHP - kratosAttack;
         counter++;
+
         if(kabalHP < 0){kabalHP = 0}
         if(kratosHP < 0){kratosHP = 0}
 
-        alert("Round" + counter +":  Kratos HP: "+ kratosHP + "  ||  Kabal HP: " + kabalHP);
+        document.getElementById("kabalHP").innerHTML = kabalHP;
+        document.getElementById("kratosHP").innerHTML = kratosHP;
+
+        alert("Round: " + counter +"  Kabal HP: " + kabalHP+ " || " +  "Kratos HP: "+ kratosHP);
         checkWin(kratosHP,kabalHP);
     }
-
-
-
 
 
 
