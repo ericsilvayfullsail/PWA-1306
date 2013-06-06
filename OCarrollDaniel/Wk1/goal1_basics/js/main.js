@@ -344,6 +344,9 @@ console.log('------ conditionals ----------');
  var weather = "Cloudy";
 if (weather == "sunny")
 {
+    bobsMood = "happy";
+}
+else{
     bobsMood = "sad";
 }
 console.log("Weather: " + weather + " " + "Bob's Mood: " + bobsMood);
@@ -364,50 +367,57 @@ console.log("Weather: " + weather + " " + "Bob's Mood: " + bobsMood);
         - else bobsMood = "sad"
     3.  console.log the results after each conditional
  ********************************************/
-       /*
+
 var waves = 10;
 if (weather == "sunny" && waves == 10 )
 {
     bobsMood = "pumped";
+    console.log("Bob's Mood: " + bobsMood + " and the weather: " + weather);
 }
-console.log("Bob's Mood: " + bobsMood + " and the weather: " + weather);
+
 
 else if(weather == "sunny" && waves == 9 || 8 || 7 || 6 || 5 )
 {
     bobsMood = "mellow";
+    console.log("Bob's Mood: " + bobsMood + " and the weather: " + weather);
 }
-console.log("Bob's Mood: " + bobsMood + " and the weather: " + weather);
+
 
 else if(weather == "sunny" && waves == 1 || 2 || 3 || 4)
 {
     bobsMood = "bummed";
+    console.log("Bob's Mood: " + bobsMood + " and the weather: " + weather);
 }
-console.log("Bob's Mood: " + bobsMood + " and the weather: " + weather);
+
 
 else if (weather == "overcast" && waves == 10 || 9 || 8 || 7)
 {
-    bobsMood = "jackedUp"
+    bobsMood = "jackedUp";
+    console.log("Bob's Mood: " + bobsMood + " and the weather: " + weather);
 }
-console.log("Bob's Mood: " + bobsMood + " and the weather: " + weather);
+
 
 else if (weather == "overcast" && waves == 6 || 5 || 4 || 3)
 {
     bobsMood = "totally Bummed";
+    console.log("Bob's Mood: " + bobsMood + " and the weather: " + weather);
 }
-console.log("Bob's Mood: " + bobsMood + " and the weather: " + weather);
+
 
 else if(weather == "overcast" && waves == 2 || 1 || 0 )
 {
     bobsMood = "not happy";
+    console.log("Bob's Mood: " + bobsMood + " and the weather: " + weather);
 }
-console.log("Bob's Mood: " + bobsMood + " and the weather: " + weather);
+
 
 else
 {
     bobsMood = "sad";
+    console.log("Bob's Mood: " + bobsMood + " and the weather: " + weather);
 }
-console.log("Bob's Mood: " + bobsMood + " and the weather: " + weather);
-  */
+
+
 
 
 /*
@@ -429,6 +439,10 @@ console.log("Bob's Mood: " + bobsMood + " and the weather: " + weather);
     - ? = perform the next statement if true
     - : = false (perform the new statement after the :)
  */
+    var mood = (weather == 'Sunny' ? 'happy' : 'sad');
+    console.log("mood: ", mood);
+    var smile = true;
+    console.log('I am ' + (smile === true ? 'happy' : 'sad'));
 
 
 
@@ -444,7 +458,9 @@ console.log("Bob's Mood: " + bobsMood + " and the weather: " + weather);
     4.  console.log the results
  ********************************************/
   var temp = 60;
-  var student1;
+  var student1 = (weather = 'Sunny' ? 'happy' : ((temp >= 80) ? 'content' : 'sad'));
+  console.log("Nested ternay weather: ", student1);
+
 
 
 // Functions: (definition, whitespace, invocation, arguments, returns)
@@ -489,7 +505,13 @@ console.log('------Functions ----------');
      - type the below as an example
         functionName();
  *****************************
-
+ */
+var myctr = 1;
+var myCounter = function(){
+    myctr++;
+    console.log('counter=', myctr);
+};
+ myCounter();
 
 
 
@@ -528,7 +550,13 @@ console.log('------Functions ----------');
     - items inside our function we call on these variables.. such as:
  */
 
-
+ var value1 = 1;
+ var value2 = 2;
+var myFn = function(var1, var2)
+{
+    console.log('function number: ', var1 + var2);
+};
+myFn(value1, value2);
 
 
 /*******************************************
