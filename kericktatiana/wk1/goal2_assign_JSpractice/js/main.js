@@ -54,14 +54,20 @@
 		
 		var average = sum / arr.length
 		
+		return average;
     };
 
-    console.log('avg number = ', avgNumbers(average));
+    console.log('avg number = ', avgNumbers([1,2,3,4,5]));
 
     //--------------------------------------------------------
     console.log("2. concat first and last name");
 
-        //PUT FUNCTION HERE
+        function fullName(firstname, lastname){
+        	var firstname = "Tatiana";
+        	var lastname = "Kerick";
+        	
+        	return [firstname, lastname];
+        }
 
     console.log(fullName('James', 'Bond'));
 
@@ -69,8 +75,20 @@
     console.log("3. word count");
     var ipsum = "this is test text that is being used as input to a function"
 
-        //PUT FUNCTION HERE
-
+        function wordCount(text){
+        	var count = 0;
+        	
+        	text = text.split(" ");
+        	
+        	for(var i = 0; i < text.length; i++){
+        		if(text[i] != ""){
+        			count += 1;
+        		}
+        	}
+        	
+        	return count;
+        };
+        
     console.log(wordCount(ipsum));
 
     //--------------------------------------------------------
