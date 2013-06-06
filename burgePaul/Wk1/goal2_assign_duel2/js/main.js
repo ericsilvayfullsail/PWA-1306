@@ -58,5 +58,5 @@ var winnerCheck = function(){
 	};
 	return result;
 };	
-//fight!
+//fight! 
 fight();
