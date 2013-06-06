@@ -3,18 +3,20 @@
  * June 4, 2013
  * The Duel
  */
-
+	// Player 1 details
 	var player1name = "Batman";
 	var player1health = 100;
 	var player1damage = 26;
 	
+	// Player 2 details
 	var player2name = "Owlman";
 	var player2health = 100;
 	var player2damage = 26;
 	
+	// round change
 	var round = 0;
 	
-
+	// function running the battle
 	var fight = function(){
 		alert(player1name + ": " + player1health +" **START** " + player2name + ": " + player1health);
 		for(var i = 0; i < 10; i++){
@@ -40,6 +42,7 @@
 		}
 	}
 	
+	// Check the winner
 	var winnerCheck = function(){
 		console.log("check");
 		 var win = "No Winner";
