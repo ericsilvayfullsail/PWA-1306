@@ -11,6 +11,8 @@ var fighter2damage = Math.round(Math.random() * 9);
 var round = 0;
 
 function fight(){
+	alert(fighter1 + "health:" + fighter1health + "START" + fighter2 + "health:" + fighter2health);
+	
 	for(var i = 0; i <= 11; i++){
 		var onePlan = Math.random() * fighter1damage;
 		var twoPlan = Math.random() * fighter2damage;
@@ -28,7 +30,7 @@ function fight(){
 		}
 		else{
 			round++;
-			alert("After the attack: " + fighter1 + "health:" + fighter1health + "," + fighter2 + "health:" + fighter2health);
+			alert("After the attack: " + fighter1 + "health:" + fighter1health + "ROUND" + round + fighter2 + "health:" + fighter2health);
 		}
 		
 	}

@@ -124,12 +124,21 @@ console.log('------Recap Conditionals ----------');
 console.log('------Recap Functions ----------');
 
     //	1.  BASIC FUNCTION:
-
+    var myCtr = 1;
+    function myCounter(){
+    	myCtr++;
+    	console.log("counter = ", myCtr);
+    };
+    myCounter();
 
 
     //	2.  ANONYMOUS FUNCTION
-
-
+    var myctr = 1;
+    var myCounter = function(){
+    	myctr++;
+    	console.log("counter = ", myctr);
+    }
+    myCounter();
 
     //Anonymous passing arguments
 
@@ -152,19 +161,27 @@ var str1 = 'I love JavaScript! ';
 var str2 = 'JavaScript loves me!';
 var abc = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 
+console.log("character at:", str1.charAt(4));
+
+console.log("Index of m:", str2.indexOf("m")); //case sensitve 
+
+console.log("Length of string 1:", str1.length);
+
+console.log("Spilt the string and put characters in quotes", abc.split(""));
 
 //STUDENT ACTIVITY 1:
 // Use substr() to console log 'JavaScript!' from str1.
-
+console.log("Student activity 1:", str1.substr(7,16));
 
 //STUDENT ACTIVITY 2:
 // Use substring() to console log 'JavaScript' from str2.
-
+console.log("Student activity 2:", str2.substring(0, 10));
 
 //STUDENT ACTIVITY 3:
 // 1. Use toLowerCase() to console log the str1 all in lowercase letters.
 // 2. Use toUpperCase() to console log the str1 all in uppercase letters.
-
+console.log("Student activity 3a:", str1.toLowerCase());
+console.log("Student activity 3b:", str1.toUpperCase());
 
 
 /*
@@ -175,10 +192,16 @@ var abc = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 
 console.log('------ MORE Numbers ----------');
 
+	var num = 457896;
+	var dec = 33.123456;
+
+	console.log(num.toExponential(2));
+
+	console.log(dec.toPrecision(4));
 
 //STUDENT ACTIVITY 4:
 // Use ??? to console dec with two decimals.
-
+	console.log("Student activity 4:", dec.toFixed(3));
 
 /*
 	===============================================
@@ -201,7 +224,15 @@ console.log('------ MORE Numbers ----------');
 
 console.log('------ MORE Booleans ----------');
 
+	// var x = 9 = 'k';
+	// console.log(x); //NaN
 
+	// if(x){
+	// 	console.log("It's true, the value is:", x);
+	// }
+	// else{
+	// 	console.log("It's false, the value is:", x);
+	// }
 	
 /*
 	===============================================
@@ -214,7 +245,21 @@ console.log('------ MORE Arrays ----------');
 var arr1 = [1, 2, 3, 4, 5, 6, 7];
 var arr2 = ['a', 'b', 'c', 'd', 'e'];
 var arr3 = ['apple', 'orange', 50393, 7.324];
-	
+
+console.log(arr2.indexOf('c'));	
+
+console.log(arr2.join(',')); //takes values and joins with a comma
+
+var element = arr1.pop(); //removes last element of the array and returns a number
+console.log(element);
+
+arr2.push("f");
+console.log(arr2); //push new characters to the end off the array
+
+console.log(arr1.reverse()); //reverse the order of array
+
+console.log(arr1.splice(4,2));
+console.log(arr1);
 
 /*******************************************
 STUDENTS ACTIVITY 5:
@@ -243,6 +288,14 @@ Use the "combined" variable for the below:
 
 console.log('------ MORE Operators - typeof() ----------');
 
+	console.log(typeof 5); //returns the type of data we're looking for
+
+	console.log(typeof "hi");
+
+	var str1 = "hello";
+	console.log(typeof str1); //looking for a certain type of response for validation
+
+	console.log(typeof true);
 
 /*
 	===============================================
@@ -268,6 +321,18 @@ console.log('------ MORE Operators - typeof() ----------');
 
 console.log('------ MORE Conditionals - Switch ----------');
 
+var fruit = "Chicken";
+switch (fruit){
+	case "Oranges":
+		console.log("Oranges are $0.59 a pound");
+		break;
+	case "Apples":
+		console.log("Apples are $0.32 a pound");
+		break;
+	default:
+		console.log("Sorry, we are out of ", fruit)
+}
+
 /*******************************************
 
  STUDENTS ACTIVITY 6:
@@ -281,7 +346,17 @@ console.log('------ MORE Conditionals - Switch ----------');
 
 ********************************************/
 
-
+var age = 12;
+switch (age){
+	case 12:
+		console.log("Child");
+		break;
+	case  18:
+		console.log("Adult");
+		break;
+	default:
+		console.log("No answer")
+}
 
 /*
 	===============================================
@@ -296,6 +371,12 @@ console.log('------ MORE Conditionals - Switch ----------');
 
 console.log('------ MORE Functions ----------');
 
+	var bondsCars = function(){
+		return ["ferrari", "lambo", "vsBug"];
+	}
+
+	var cars = bondsCars();
+	console.log("James Bonds Cars:", cars);
 
 	/* 
 		Self Executing Functions
@@ -345,7 +426,12 @@ console.log('------ MORE Functions ----------');
 */
 console.log('------ While / Loop ----------');
 
-	
+	var  numOfBeers = 10;
+	while(numOfBeers > 0){
+		console.log(numOfBeers + "kegs on the wall");
+		numOfBeers--;
+	}
+
 /*
 	===============================================
 	For Loop, prebuilt logic structure
@@ -370,6 +456,9 @@ console.log('------ While / Loop ----------');
 
 console.log('------For Loop ----------');
 
+	for(var beers = 10; beers < 0; beers--){
+		console.log(beers + "bottles of beer on the wall");
+	}
 
 	/* 
 		array.Length
@@ -383,6 +472,8 @@ console.log('------For Loop ----------');
 			- the  .length property returns the count, which would be 5	
 	*/	
 
+	var myNums = [1,2,3,4,5];
+	console.log("length:", myNums.length);
 
 	/* 
 		using the for() loop with .length
@@ -412,7 +503,13 @@ console.log('------For Loop ----------');
 			break point, and perform no more iterations
 	*/
 
-
+for(var i = 0, j = myNums.length; i<j; i++){
+	if(i ===3){
+		console.log("testing out the break and it broke");
+		break
+	}
+	console.log("1. length in for loop:", myNums[i]);
+}
 
 	/*
 		CONTINUE...
@@ -437,7 +534,21 @@ console.log('------For Loop ----------');
 
 ********************************************/
 
+	var heros = [
+		"Superman",
+		"Batman",
+		"Wolverine",
+		"Iceman",
 
+	];
+
+	for (var i = 0; i<heros.length; i++){
+		console.log(heros[i]);
+	}
+
+	for (var i = 0, max = heros.length; i<max; i++){
+		console.log(heros[i]);
+	}
 
 /*******************************************
  STUDENTS ACTIVITY 8:
@@ -486,7 +597,7 @@ console.log('------ FUNCTION DEVELOPMENT ----------');
      1.  output "name" in lowercase
      2.  output "name" in uppercase
      3.  output the character in the 3rd index
-     4.  output the index number where the work "nice" us located
+     4.  output the index number where the word "nice" is located
      5.  output the characters in "name" between indexes 10 & 14
      6.  create a array variable using "name", and output the array
      7.  output the item in index 4
@@ -498,10 +609,32 @@ console.log('------ FUNCTION DEVELOPMENT ----------');
      12. output the array without "NEW VALUE"
 ********************************************/
 
+
     console.log('------ More PRACTICE ----------');
 
     var name = 'This is a nice change of pace';
 
+    console.log(name.toLowerCase());
+	console.log(name.toUpperCase());
 
+	console.log(name[3]);
+	console.log(name.indexOf("nice"));
+	console.log (name.slice(10,14));
+	console.log(name.substring(10, 14));
+	
+	var array1 = name.split(" ");
+	console.log(array1);
+	console.log(array1[4]);
+
+	console.log(array1.join("|"));
+	console.log(array1.reverse());
+
+	console.log(array1.slice(1));
+
+	console.log(array1.push("new value"));
+	console.log(array1);
+
+	array1.pop();
+	console.log(array1);
 
 })();
