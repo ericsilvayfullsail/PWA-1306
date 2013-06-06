@@ -47,11 +47,16 @@
 
     console.log("1. avg of an array of numbers");
     var avgNumbers = function(arr){
-
-        //CODE GOES HERE
+		
+		var arr = [1,3,5,7,9,11,13]
+		
+		var sum = eval(arr.join("+"));
+		
+		var average = sum / arr.length
+		
     };
 
-    console.log('avg number = ', avgNumbers([1,2,3,4,5]));
+    console.log('avg number = ', avgNumbers(average));
 
     //--------------------------------------------------------
     console.log("2. concat first and last name");
