@@ -1,13 +1,8 @@
 
-//Cory Lynch
 
+var Player1 = ["P1", 100, Math.floor(25*Math.random() + 25)];
+var Player2 = ["P2", 100, Math.floor(25*Math.random() + 25)];
 
-var PlayerName1 = "P1";
-var PlayerName2 = "P2";
-var PlayerHealth1 = 100;
-var PlayerHealth2 = 100;
-var PlayerDamage1 = Math.floor(25*Math.random() + 25);
-var PlayerDamage2 = Math.floor(25*Math.random() + 25);
 var BreakCheck;
 
 
@@ -17,22 +12,22 @@ function master(){
 
     for (i = 1; i <11; i++){
 
-        alert("Player1: " + PlayerHealth1 + "    Round: " + i + "   Player2 " + PlayerHealth2);
+        alert("Player1: " + Player1[1] + "    Round: " + i + "   Player2 " + Player2[1]);
 
         winnerCheck();
 
         function winnerCheck (){
-            if (PlayerHealth1<=0 && PlayerHealth2>=0){
-                PlayerHealth1 = 0;
+            if (Player1[1]<=0 && Player2[1]>=0){
+                Player1[1] = 0;
                 alert("Game over! You lose..");
                 BreakCheck = "end";
-            }else if(PlayerHealth2<=0 && PlayerHealth1>=0 ){
-                PlayerHealth2 = 0;
+            }else if(Player1[1]<=0 && Player2[1]>=0 ){
+                Player2[1] = 0;
                 alert("Game over! You win!");
                 BreakCheck = "end";
 
             }
-            else if(PlayerHealth1<=0 && PlayerHealth2<=0 ){
+            else if(Player1[1]<=0 && Player2[1]<=0 ){
                 alert("Tie");
                 BreakCheck = "end";
             }
@@ -45,12 +40,12 @@ function master(){
 
 
         function fight (){
-            PlayerHealth1 = PlayerHealth1 - PlayerDamage2;
-            PlayerHealth2 = PlayerHealth2 - PlayerDamage1;
-            if (PlayerHealth1<=0){
-                PlayerHealth1 = 0;}
-            if(PlayerHealth2<=0){
-                PlayerHealth2 = 0;}
+            Player1[1] = Player1[1] - Player2[2];
+            Player2[1] = Player2[1] - Player1[2];
+            if (Player1[1]<=0){
+                Player1[1] = 0;}
+            if(Player2[1]<=0){
+                Player2[1] = 0;}
 
 
 
@@ -64,6 +59,8 @@ function master(){
     }
 
 }
+
+
 
 
 

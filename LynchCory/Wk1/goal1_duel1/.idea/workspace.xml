@@ -4,8 +4,10 @@
     <list default="true" id="b7898d6d-c4e7-4397-9a2b-bf1a303cc78b" name="Default" comment="" />
     <ignored path="goal1_duel1.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/index.html" changelist="b7898d6d-c4e7-4397-9a2b-bf1a303cc78b" time="1370523906155" ignored="false" />
-    <file path="/main.js" changelist="b7898d6d-c4e7-4397-9a2b-bf1a303cc78b" time="1370478889672" ignored="false" />
+    <file path="/index.html" changelist="b7898d6d-c4e7-4397-9a2b-bf1a303cc78b" time="1370536253284" ignored="false" />
+    <file path="/main.js" changelist="b7898d6d-c4e7-4397-9a2b-bf1a303cc78b" time="1370532165810" ignored="false" />
+    <file path="$PROJECT_DIR$/../goal2_practice/js/main.js" changelist="b7898d6d-c4e7-4397-9a2b-bf1a303cc78b" time="1370532183790" ignored="false" />
+    <file path="$PROJECT_DIR$/../goal2_practice/index.html" changelist="b7898d6d-c4e7-4397-9a2b-bf1a303cc78b" time="1370531765845" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +30,7 @@
       <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="60" selection-start="502" selection-end="502" vertical-scroll-proportion="0.5538462">
+            <state line="30" column="40" selection-start="777" selection-end="777" vertical-scroll-proportion="0.6923077">
               <folding />
             </state>
           </provider>
@@ -37,7 +39,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="24" selection-start="400" selection-end="400" vertical-scroll-proportion="-11.25">
+            <state line="29" column="29" selection-start="673" selection-end="673" vertical-scroll-proportion="-16.25">
               <folding />
             </state>
           </provider>
@@ -129,7 +131,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../goal2_practice" />
     <property name="FullScreen" value="false" />
   </component>
   <component name="RunManager">
@@ -314,14 +316,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="24" selection-start="400" selection-end="400" vertical-scroll-proportion="-11.25">
+        <state line="29" column="29" selection-start="673" selection-end="673" vertical-scroll-proportion="-16.25">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="60" selection-start="502" selection-end="502" vertical-scroll-proportion="0.5538462">
+        <state line="30" column="40" selection-start="777" selection-end="777" vertical-scroll-proportion="0.6923077">
           <folding />
         </state>
       </provider>
