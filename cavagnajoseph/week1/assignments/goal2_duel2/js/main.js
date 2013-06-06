@@ -39,7 +39,6 @@ function fight(){
 	}
 }
 
-
 // Check on the status of the fighters
 function winnerCheck(){
 
