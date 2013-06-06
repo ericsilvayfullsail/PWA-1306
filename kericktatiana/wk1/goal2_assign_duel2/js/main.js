@@ -43,20 +43,25 @@ function fight(){
 
 function winnerCheck(){
 	
+	//if the health of fighter1 and fighter2 are the same, the game ends and its a tie
 	if(fighter1[1] <= 0 && fighter2[1] <= 0){
 		return "its a tie";
 	}
+	//if the health of figher1 is less then 0, fighter2 has won
 	else if(fighter1[1] <= 0){
 		return fighter2 + "has won!";
 	}
+	//if the health of fighter 2 is less then 0, fighter1 has won
 	else if(fighter2[1] <= 0){
 		return fighter1 + "has won!";
 	}
+	//if the rounds are over 10, then the game is over
 	else if(round >= 10){
 		return "game over!"
 	}
 	else{
 		}
 }
+//calling the fight function
 fight();
 
