@@ -40,6 +40,8 @@ function checkWin(kraHP, kabHP)
     }
 
 
+
+
     function kombat()
     {
         kabalAttack = Math.floor((Math.random()*25) +20);
