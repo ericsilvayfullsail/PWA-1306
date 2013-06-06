@@ -62,7 +62,7 @@
     //--------------------------------------------------------
     console.log("2. concat first and last name");
 
-        function fullName(firstname, lastname){
+       var fullName = function(firstname, lastname){
         	var firstname = "Tatiana";
         	var lastname = "Kerick";
         	
@@ -75,7 +75,7 @@
     console.log("3. word count");
     var ipsum = "this is test text that is being used as input to a function"
 
-        function wordCount(text){
+        var wordCount = function(text){
         	var count = 0;
         	
         	text = text.split(" ");
@@ -94,22 +94,78 @@
     //--------------------------------------------------------
     console.log("4. sentence char count");
 
-        //PUT FUNCTION HERE
+       var charCount = function(str){
+        	var count = 0;
+        	
+        	for(var i = 0, j = str.length; i < j; i++){
+        		if(str[i] != " "){
+        			count++;
+        		}
+        	}
+        	return count;
+        }
 
     console.log(charCount(ipsum));
 
     //--------------------------------------------------------
     console.log("5. how many vowels in a word");
 
-        //PUT FUNCTION HERE
+        var vowelsInWord = function(vowel){
+        	var count = 0;
+        	for(var i = 0, j = vowel.length; i < j; i++){
+        		switch(vowel[i]){
+        			case "a":
+        				count++;
+        				break;
+        			case "e":
+        				count++;
+        				break;
+        			case "i":
+        				count++
+        				break;
+        			case "o":
+        				count++
+        				break;
+        			case "u":
+        				count++;
+        				break;
+        		}
+        	}
+        	return count;
+        }
 
     console.log(vowelsInWord('JavaScript'));
 
     //--------------------------------------------------------
     console.log("6. find number and create an array of even or odd numbers");
 
-        //PUT FUNCTION HERE
-
+		var findNum = function(arr, boo){
+			newArray = [];
+			checkEven = true;
+			
+			if(boo != null){
+				checkEven = boo;
+			}
+			
+			if(checkEven){
+				for(var i = 0, j = arr.length; i < j; i++){
+					if(arr[i] % 2 == 0){
+						newArray.push(arr[i]);
+					}
+				}
+				
+			}
+			else{
+				for(var i = 0, j = arr.length; i < j; i++){
+					if(arr[i] % 2 == 1){
+						newArray.push(arr[i])
+					}
+				}
+			}
+			
+			return newArray;
+		}
+		
     console.log(findNum([31,22,4,67,83,6,5,4]));
     console.log(findNum([31,22,4,67,83,6,5,4], false));
 
