@@ -1,4 +1,6 @@
 
+//Cory Lynch
+
 var PlayerName1 = "P1";
 var PlayerName2 = "P2";
 var PlayerHealth1 = 100;
