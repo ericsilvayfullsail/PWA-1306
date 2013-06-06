@@ -440,48 +440,7 @@ console.log('------For Loop ----------');
 
 
 /*******************************************
- STUDENTS ACTIVITY 8:
-
-	1.  create a function named 'avgNumbers'
-		- accept 1 parameter that will be an array of unlimited numbers
-		- find the average of all the numbers
-		- output the answer
-
-	2.  create a function named 'fullName'
-		- accept 2 parameters that are strings (firstname and lastname)
-		- return the name after it has been concatenated
-		- output the answer outside of the function
-
-	3.  create a function named 'wordCount'
-		- accept 1 parameter that is a long string of text
-		- return length of the array of string characters
-		- output the answer outside of the function
-
-	4.  create a function named 'charCount'
-		- accept 1 parameter that is a long string of text
-		- return length of the array of string characters
-		- output the answer outside of the function
-	
-	5.  create a function named 'vowelsInWord'
-		- accept 1 parameter that is a a one word string
-		- return the number of vowels in the word
-		- output the answer outside of the function
-		
-	 6.  create a function named 'findNum'
-		- accepts 2 parameters - 1. array of numbers, 2. boolean
-		- if the second parameter being passed is "false" then 
-			a. create an array with all of the odd numbers from 
-				the array
-		- else - create an array with all of the even numbers
-				from the array 		
-		- return the array
-		- output the answer outside of the function
-********************************************/
-console.log('------ FUNCTION DEVELOPMENT ----------');
-
-
-/*******************************************
-    STUDENTS ACTIVITY 9: (More Practice):
+    STUDENTS ACTIVITY 8: (More Practice):
 
      1.  output "name" in lowercase
      2.  output "name" in uppercase
