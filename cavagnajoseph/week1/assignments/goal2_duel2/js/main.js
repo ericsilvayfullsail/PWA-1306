@@ -20,8 +20,8 @@ function fight(){
 	for (var i = 0; i <= 12; i++) {
 
 // Application of damage to the fighters
-		fighter2[1] -= fighter1[2] + Math.ceil(Math.random()*15);
-		fighter1[1] -= fighter2[2] + Math.ceil(Math.random()*10);
+		fighter2[1] = fighter2[1] - (fighter1[2] + Math.ceil(Math.random()*15));
+		fighter1[1] = fighter1[1] - (fighter2[2] + Math.ceil(Math.random()*10));
 
 // Result of the fight from the check
 		var result = winnerCheck();
@@ -50,7 +50,7 @@ function winnerCheck(){
 	}
 
 // Check for fighter 1's health is under 0
-	else if(fighter[1] <= 0){
+	else if(fighter1[1] <= 0){
 		return fighter2[0] + " wins!";
 	}
 
