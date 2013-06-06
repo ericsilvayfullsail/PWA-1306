@@ -4,6 +4,8 @@ June 4, 2013
 Goal 1 Duel 1
 ===============================================*/
 
+//test
+
 //Player One Info
 var playerOne = "Optimus Prime";
 var playerOneHealth = 100;
