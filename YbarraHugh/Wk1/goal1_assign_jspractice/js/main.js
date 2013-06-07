@@ -71,4 +71,33 @@ console.log("=== Question 4 ===");
 var numVowels = vowelsInWord(usedWord);
 console.log(numVowels);
 // =========================================
-console.log("=== Question 4 ===");
+var aNumberArray = [1, 2, 3, 4, 5, 6, 7, 8, 9 , 0 ];
+function findNum( numberArray, someBool){
+    var evenArray = [];
+    var oddArray = [];
+    if (someBool){
+        for (var m = 0; m < numberArray.length; m++){
+            if (numberArray[m] % 2 == 0){
+                evenArray.push(numberArray[m]);
+            }
+        }
+        return evenArray;
+    }// end if
+    if (!someBool){
+        for(var n = 0; n < numberArray.length; n++)
+        {
+            if (numberArray[n] % 2 != 0){
+                oddArray.push(numberArray[n]);
+
+            }
+        }
+        return oddArray;
+    }// end else
+}
+console.log("=== Question 5 ===");
+var evenNums = findNum(aNumberArray, true);
+console.log("Even Nums: " + evenNums);
+var oddNums = findNum(aNumberArray, false);
+console.log("Odd Nums: " + oddNums);
+
+

@@ -5,7 +5,7 @@
     <ignored path="YbarraHugh.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/index.html" changelist="dd154481-ac85-4876-880d-ad87f90fdaa1" time="1370568885268" ignored="false" />
-    <file path="/main.js" changelist="dd154481-ac85-4876-880d-ad87f90fdaa1" time="1370572738330" ignored="false" />
+    <file path="/main.js" changelist="dd154481-ac85-4876-880d-ad87f90fdaa1" time="1370575231538" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +37,7 @@
       <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Wk1/goal1_assign_jspractice/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="73" column="34" selection-start="2340" selection-end="2340" vertical-scroll-proportion="0.9141631">
+            <state line="96" column="27" selection-start="2943" selection-end="2943" vertical-scroll-proportion="0.7261236">
               <folding />
             </state>
           </provider>
@@ -61,7 +61,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="58" />
     <option name="y" value="31" />
-    <option name="width" value="1383" />
+    <option name="width" value="1537" />
     <option name="height" value="860" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -176,13 +176,13 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="58" y="31" width="1383" height="860" extended-state="0" />
+    <frame x="58" y="31" width="1537" height="860" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22457068" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -292,7 +292,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Wk1/goal1_assign_jspractice/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="34" selection-start="2340" selection-end="2340" vertical-scroll-proportion="0.9141631">
+        <state line="96" column="27" selection-start="2943" selection-end="2943" vertical-scroll-proportion="0.7261236">
           <folding />
         </state>
       </provider>
