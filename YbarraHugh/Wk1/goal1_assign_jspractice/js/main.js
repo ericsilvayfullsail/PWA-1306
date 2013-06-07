@@ -49,8 +49,26 @@ console.log("=== Question 3 ===");
 var numWords = wordCount(mySentence);
 console.log("Number of words = "+ numWords)
 // =========================================
-//reate a function named 'charCount'
-//    - accept 1 parameter into the function that is a long string
-// text - return length of the array of string characters
-//- console.log the answer outside of the function
+console.log("=== Question 4 ===");
+var anotherString = "Yet another boring string of words.";
+function charCount(someString){
+     return someString.length;
+}
+theStringLength = charCount(anotherString);
+console.log(theStringLength);
+// =========================================
+var usedWord = "Tenochtitlan";
+function vowelsInWord(someWord){
+    var vowelCounter = 0;
+    for (var l = 0; l < someWord.length; l++){
+        if (someWord[l] === "a" || someWord[l] === "e" || someWord[l] === "i" || someWord[l] === "o" || someWord[l] === "u"){ // not using y?
+            vowelCounter ++;
+        }
+    }
+    return vowelCounter;
+}
+console.log("=== Question 4 ===");
+var numVowels = vowelsInWord(usedWord);
+console.log(numVowels);
+// =========================================
 console.log("=== Question 4 ===");

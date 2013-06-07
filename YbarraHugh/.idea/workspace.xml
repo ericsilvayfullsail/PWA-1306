@@ -5,7 +5,7 @@
     <ignored path="YbarraHugh.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/index.html" changelist="dd154481-ac85-4876-880d-ad87f90fdaa1" time="1370568885268" ignored="false" />
-    <file path="/main.js" changelist="dd154481-ac85-4876-880d-ad87f90fdaa1" time="1370571976057" ignored="false" />
+    <file path="/main.js" changelist="dd154481-ac85-4876-880d-ad87f90fdaa1" time="1370572738330" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +37,7 @@
       <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Wk1/goal1_assign_jspractice/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="3" selection-start="1640" selection-end="1640" vertical-scroll-proportion="0.8525281">
+            <state line="73" column="34" selection-start="2340" selection-end="2340" vertical-scroll-proportion="0.9141631">
               <folding />
             </state>
           </provider>
@@ -292,7 +292,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Wk1/goal1_assign_jspractice/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="3" selection-start="1640" selection-end="1640" vertical-scroll-proportion="0.8525281">
+        <state line="73" column="34" selection-start="2340" selection-end="2340" vertical-scroll-proportion="0.9141631">
           <folding />
         </state>
       </provider>
