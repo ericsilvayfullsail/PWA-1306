@@ -3,7 +3,6 @@
  * User: Hugh
  * Date: 6/6/13
  * Time: 9:34 PM
- * To change this template use File | Settings | File Templates.
  */
 function avgNumbers( x ){
     var tempNumber = 0;
