@@ -4,11 +4,12 @@ June 6, 2013
 Goal 2 Assignment JSPractice
 ===============================================*/
 
-var numArray = [22, 11, 10];
+var averageNum = 0;
 
-var avgNumbers = function(numbers) {
-    numbers[0] + numbers[1] + numbers[2] + numbers[3] / numbers.length;
-    return numbers;
+var avgNumbers = function(numArray) {
+    for(var i = 0, arrayLength = numArray.length; i < arrayLength; i++) {
+        averageNum = numArray[i]
+    }
 }
 
 avgNumbers();
