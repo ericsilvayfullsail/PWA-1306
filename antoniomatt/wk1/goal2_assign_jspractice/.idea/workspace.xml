@@ -4,7 +4,7 @@
     <list default="true" id="700f72fe-44d0-4c01-a090-bfc456e9c263" name="Default" comment="" />
     <ignored path="goal2_assign_jspractice.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/main.js" changelist="700f72fe-44d0-4c01-a090-bfc456e9c263" time="1370894240503" ignored="false" />
+    <file path="/main.js" changelist="700f72fe-44d0-4c01-a090-bfc456e9c263" time="1370897603000" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,52 +23,35 @@
     <favorites_list name="goal2_assign_jspractice" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf>
-          <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/js/main.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="86" column="4" selection-start="2240" selection-end="2240" vertical-scroll-proportion="0.72685885">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/../../../student files/Lecture Activities STUDENT/goal2_practice/js/main.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="441" column="76" selection-start="10413" selection-end="10413" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/../../../student files/Lecture Materials/Day2/js/main.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/../../../../../../main.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="131" column="47" selection-start="3521" selection-end="4073" vertical-scroll-proportion="0.27314112">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="75" column="36" selection-start="2011" selection-end="2011" vertical-scroll-proportion="0.45684522">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../../student files/Lecture Activities STUDENT/goal2_practice/js/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="441" column="76" selection-start="10413" selection-end="10413" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../../student files/Lecture Materials/Day2/js/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -115,6 +98,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -149,7 +133,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -158,8 +141,8 @@
     <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../../main.js" />
     <property name="FullScreen" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -269,16 +252,16 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../goal1_basics/js/main.js">
+    <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-11.5">
+        <state line="75" column="36" selection-start="2011" selection-end="2011" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../../student files/Lecture Activities STUDENT/goal1_basics/js/main.js">
+    <entry file="file://$PROJECT_DIR$/../../../student files/Lecture Activities STUDENT/goal2_practice/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-8.6875">
+        <state line="441" column="76" selection-start="10413" selection-end="10413" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -292,7 +275,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../../../../../../main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="131" column="47" selection-start="3521" selection-end="4073" vertical-scroll-proportion="0.27314112">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../goal1_basics/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-11.5" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../student files/Lecture Activities STUDENT/goal1_basics/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-8.6875" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../../../main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="169" column="56" selection-start="4294" selection-end="5085" vertical-scroll-proportion="0.87556905">
           <folding />
         </state>
       </provider>
@@ -304,9 +304,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../../../student files/Lecture Materials/Day2/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="4" selection-start="2240" selection-end="2240" vertical-scroll-proportion="0.72685885">
+        <state line="75" column="36" selection-start="2011" selection-end="2011" vertical-scroll-proportion="0.45684522">
           <folding />
         </state>
       </provider>

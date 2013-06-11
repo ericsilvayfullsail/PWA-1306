@@ -10,7 +10,7 @@
 
     var averageNum = 0;
 
-    var avgNumbers = function(numArray) {
+    function avgNumbers(numArray) {
         for(var i = 0, arrayLength = numArray.length; i < arrayLength; i++) {
             averageNum = numArray[i] + averageNum;
         }
@@ -25,7 +25,7 @@
 
     console.log("2. Create a function called fullName");
 
-    var fullName = function(firstName, lastName) {
+    function fullName(firstName, lastName) {
         var myName = firstName + " " + lastName;
         return myName;
     }
@@ -38,7 +38,7 @@
 
     var stringOfWords = "JavaScript is so unbelievably awesome";
 
-    var wordCount = function(words) {
+    function wordCount(words) {
         var countWords = words.split(" ");
         countWords = countWords.length;
         return countWords;
@@ -52,34 +52,34 @@
 
     var thisIsAString = "blah blah";
 
-    var charCount = function(chars) {
+    function charCount(chars) {
         var countChars = chars;
         countChars = countChars.length;
         return countChars;
     }
+
     console.log(charCount(thisIsAString));
 
 //************************************************
 
     console.log("5. Create a function named vowelsInWord");
 
-    var vowelsInWord = function(word) {
+    function vowelsInWord(word) {
         var vowels = 0;
 
         for(var i = 0; i < word.length; i++) {
-            var vowel = vowels;
 
-            if(vowel === +"a" ||
-               vowel === +"e" ||
-               vowel === +"i" ||
-               vowel === +"o" ||
-               vowel === +"u") {
-                vowel++;
+            if(vowels === +"a" ||
+               vowels === +"e" ||
+               vowels === +"i" ||
+               vowels === +"o" ||
+               vowels === +"u") {
+               vowels++;
             }
         }
         return vowels;
 
-    };
+    }
 
     console.log(vowelsInWord("Matt"));
 
@@ -87,6 +87,9 @@
 
     console.log("6. Create a function named findNum");
 
+    function findNum(numArray, trueFalse) {
 
+
+    }
 
 } )();
