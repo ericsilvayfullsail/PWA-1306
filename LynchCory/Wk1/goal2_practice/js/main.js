@@ -156,15 +156,16 @@ var abc = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 //STUDENT ACTIVITY 1:
 // Use substr() to console log 'JavaScript!' from str1.
 
-
+        console.log(str1.substr(7,11));
 //STUDENT ACTIVITY 2:
 // Use substring() to console log 'JavaScript' from str2.
 
-
+        console.log(str2.substring(0,10));
 //STUDENT ACTIVITY 3:
 // 1. Use toLowerCase() to console log the str1 all in lowercase letters.
 // 2. Use toUpperCase() to console log the str1 all in uppercase letters.
-
+        console.log(str1.toLowerCase());
+        console.log(str1.toLowerCase());
 
 
 /*
@@ -175,9 +176,18 @@ var abc = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 
 console.log('------ MORE Numbers ----------');
 
+    var num = 457896;
+    var dec = 33.123456;
+
+    console.log(num.toExponential(2));
+    console.log(dec.toPrecision(4));
+
 
 //STUDENT ACTIVITY 4:
 // Use ??? to console dec with two decimals.
+
+
+    console.log(dec.toFixed(2));
 
 
 /*
@@ -201,7 +211,14 @@ console.log('------ MORE Numbers ----------');
 
 console.log('------ MORE Booleans ----------');
 
+     var x = 9 * 'k';
 
+     console.log(x);
+    if (x){
+        console.log("It's true, the value is: ", x)
+    } else{
+        console.log("It's false, the value is: ", x)
+    }
 	
 /*
 	===============================================
@@ -214,6 +231,19 @@ console.log('------ MORE Arrays ----------');
 var arr1 = [1, 2, 3, 4, 5, 6, 7];
 var arr2 = ['a', 'b', 'c', 'd', 'e'];
 var arr3 = ['apple', 'orange', 50393, 7.324];
+
+    console.log(arr2.indexOf('c'));
+    console.log(arr2.join(','));
+
+    var element = arr1.pop();
+    console.log(element);
+
+    arr2.push('f');
+    console.log(arr2);
+
+    console.log(arr1.reverse());
+
+    console.log(arr1.splice(4,2));
 	
 
 /*******************************************
@@ -279,7 +309,25 @@ console.log('------ MORE Conditionals - Switch ----------');
 			if no age then console.log "No answer"
 
 
+
+
+
 ********************************************/
+
+    var age = 11;
+
+    switch(age){
+        case 13:
+            console.log("child");
+            break;
+        case 18:
+            console.log("adult");
+            break;
+        default:
+            console.log("No Answer");
+            break;
+
+    }
 
 
 
@@ -295,6 +343,7 @@ console.log('------ MORE Conditionals - Switch ----------');
 */
 
 console.log('------ MORE Functions ----------');
+
 
 
 	/* 
@@ -384,6 +433,7 @@ console.log('------For Loop ----------');
 	*/	
 
 
+
 	/* 
 		using the for() loop with .length
 
@@ -436,6 +486,23 @@ console.log('------For Loop ----------');
 			- in the loop just console.log the values			
 
 ********************************************/
+
+    var heroes = [
+        'Superman',
+        'Batman',
+        'Wolverine',
+        'Iceman'
+
+
+    ];
+
+    for (var i = 0; i < heroes.length; i++){
+        console.log(heroes[i]);
+    }
+
+    for (var i =0; max = heroes.length; i < max; i++){
+        console.log(heroes[i]);
+    }
 
 
 
@@ -498,9 +565,34 @@ console.log('------ FUNCTION DEVELOPMENT ----------');
      12. output the array without "NEW VALUE"
 ********************************************/
 
+
+
     console.log('------ More PRACTICE ----------');
 
-    var name = 'This is a nice change of pace';
+    var name = ['This is a nice change of pace'];
+
+
+    console.log(name.toLowerCase());  //1
+    console.log(name.toUpperCase());  //2
+    console.log(name.charAt(3));                                  //3
+    console.log(name.indexOf('nice'));//4
+
+    console.log(name.substring(10,14));//5
+
+    var array1 = name.split(' ');
+    console.log(array1[4]);
+    console.log(name.join('|'));
+    console.log(name.reverse());
+    console.log(name.slice(1));
+    console.log(name.push("NEW VALUE"));
+
+    console.log(array1.pop());
+
+
+
+
+
+
 
 
 
