@@ -7,6 +7,7 @@
 
 // Beginning of assignment
 
+// Problem 1
 var example = [10, 10, 10, 10, 10, 10] ;
 function avgNumbers(param1){
 	var average = 0;
@@ -18,3 +19,12 @@ function avgNumbers(param1){
 }
 
 console.log("The average of the numbers is ", avgNumbers(example));
+
+// Problem 2
+var first = "Henrique";
+var last  = "Baleroni"
+function fullName(firstName, lastName){
+	return(firstName+' '+lastName);
+}
+
+console.log("My name is "+ fullName(first, last));
