@@ -1,5 +1,5 @@
 /*
-	Week1 / Goal2 JavaScript Practice
+    Week1 / Goal2 JavaScript Practice
 */
 
 // scope wrapper (self executing function)
@@ -9,21 +9,24 @@
 	===============================================
 	RESEARCHING
 	-----------------------------------------------
-	To find documentation, use http://dochub.io/#javascript
+	To find documentation, use http://dochub.io
 */	
-		
+	
+	
 /* 
 	===============================================
 	RECAP:  Data Types
 	-----------------------------------------------
 	"string"						string literal
-	1, 3.14, 10e10					number literal
-	TRUE / FALSE					boolean literal
+	3.14							number literal
+	1								number literal
+	10e10							number literal
 	["a", "b", "c"]					array literal
 	function(arg, arg2){}			function literal
 	undefined						undefined
 */
 	
+
 /*
 	===============================================
 	RECAP:  Variable Declarations
@@ -33,18 +36,6 @@
 
 console.log('------Recap Variables ----------');
 
-    var nothing,
-        myNum = 2,
-        myBoolean = true,
-        myArray = [10,'bondJames', true, function(){}],
-        fn = function(){}
-    ;
-    //GETTER
-    console.log('myArray: ', myArray[1]);
-
-    //SETTER
-    myArray[1] = 'msBond';
-    console.log('myArray: ', myArray[1]);
 
 
 /*
@@ -67,26 +58,10 @@ console.log('------Recap Variables ----------');
 		== 	is the equality operator, does not check against data type
 		=== is the identity operator, checks data type match - will use this
 
-			Best Practice:  Use identity operator 99% of the time
+        Best Practice:  Use identity operator 99% of the time
 */	
 
 console.log('------Recap Conditionals ----------');
-
-    if ("1" == 1){
-        console.log("'1' == 1, True");
-    };
-
-    if (1 == 1){
-        console.log("1 == 1, True");
-    };
-
-    if ("1" === 1){
-        console.log("'1' === 1, False");
-    };
-
-    if ("1" !== 1){
-        console.log("'1' !== 1, True");
-    };
 
 
 	/* 	==============================================================
@@ -100,12 +75,6 @@ console.log('------Recap Conditionals ----------');
   		================================================================
   	*/
 
-    //from above
-    if ("1" === 1){
-        console.log("'1' === 1, True");
-    }else{
-        console.log("False");
-    };
 
 
 	/* 	==============================================================
@@ -113,7 +82,7 @@ console.log('------Recap Conditionals ----------');
 
 		if (a < b){
 			//execute this block of code if a is less than b
-		}else if (a > b){
+		}else if{
 			//execute this block of code
 		}else{
 			//execute this block of code
@@ -121,29 +90,14 @@ console.log('------Recap Conditionals ----------');
   		================================================================
   	*/
 
-    if ("1" === 1){
-        console.log("'1' === 1, True");
-    }else if (1 !== 1){
-        console.log("1 !== 1, True");
-    }else{
-        console.log("If - Else If - Else")
-    };
 
 
   	/*
 	  	&& = AND
 	  	|| = OR
-	*/
+	*/ 
 
-    // AND
-    if ((1 === 1) && ("hi" === "hi") ){
-        console.log('&& logical operator: both sides = true');
-    };
 
-    // OR
-    if ((1 === "1") || ("hi" === "hi") ){
-        console.log('|| logical operator: on side = true');
-    }
 
 	/*
 		Ternary conditional:
@@ -159,7 +113,6 @@ console.log('------Recap Conditionals ----------');
 				};
 	*/
 
-    (1 === 1) ? console.log("Ternary Conditional is True") : console.log("Ternary Conditional is False");
 
 /*
 	===============================================
@@ -170,41 +123,17 @@ console.log('------Recap Conditionals ----------');
 
 console.log('------Recap Functions ----------');
 
-	//	1.  BASIC FUNCTION:
-		var myctr = 1;
-		function myCounter(){
-			myctr++;
-			console.log('counter = ', myctr);
-		};
-
-		myCounter();  //to call the function and use it
+    //	1.  BASIC FUNCTION:
 
 
-	//	2.  ANONYMOUS FUNCTION
-        var myctr = 1;
 
-        var myCounter = function(){
-            myctr++;
-            console.log('counter = ', myctr)
-        };
-
-        myCounter();
-        myCounter();
+    //	2.  ANONYMOUS FUNCTION
 
 
-	//Anonymous passing arguments
-        var value1 = 1;
-        var value2 = 2;
 
-        var myCounter = function(var1, var2){
-            console.log("var1: ", var1 + ' ' + "var2: ", var2);
-            console.log('counter = ', var1 + var2)
-        };
+    //Anonymous passing arguments
 
-        console.log("value1: ", value1 + ' ' + "value2: ", value2);
-        myCounter(value1, value2);
 
-	//SHOW a Return example
 
 /*******************************************************************
  	REVIEW COMPLETE
@@ -224,44 +153,18 @@ var str2 = 'JavaScript loves me!';
 var abc = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 
 
-// Use charAt() to console log the 'v' in str1.
-console.log(str1.charAt(4));
-
-// Use indexOf() to console log the index of 'm' in str2.
-console.log(str2.indexOf('m'));
-
-// Use lastIndexOf() to console log the last 'a' in str1.
-console.log(str1.lastIndexOf('a'));
-
-// Use length to console log the length in str1.
-console.log(str1.length);
-
-// Use split() to console log an array of the ABC's using the abc variable.
-// EX: ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
-console.log(abc.split(''));
-
-
 //STUDENT ACTIVITY 1:
-// Use substr() to console log 'JavaScript!' from str1. 
-console.log(str1.substr(7, 11));
-
-// Use concat() to console log 'I love JavaScript ! JavaScript loves me!' with str1 and str2.
-console.log(concat(str1, str2));
+// Use substr() to console log 'JavaScript!' from str1.
 
 
 //STUDENT ACTIVITY 2:
-// Use substring() to console log 'JavaScript' from str2. 
-console.log(str2.substring(0, 10));
+// Use substring() to console log 'JavaScript' from str2.
 
 
 //STUDENT ACTIVITY 3:
 // 1. Use toLowerCase() to console log the str1 all in lowercase letters.
 // 2. Use toUpperCase() to console log the str1 all in uppercase letters.
-console.log(str1.toLowerCase());
-console.log(str1.toUpperCase());
 
-// Use toString() to console log the type of str1.
-console.log(typeof str1.toString());
 
 
 /*
@@ -272,22 +175,9 @@ console.log(typeof str1.toString());
 
 console.log('------ MORE Numbers ----------');
 
-var num = 457896;
-var dec = 33.123456;
-
-// Use toExponential() console log num in exponential notation with two decimals.
-console.log(num.toExponential(2));
-
-// Use toPrecision() console log dec as four numbers.
-console.log(dec.toPrecision(4));
 
 //STUDENT ACTIVITY 4:
 // Use ??? to console dec with two decimals.
-console.log(dec.toFixed(2));
-
-// Use toString() to console log the type of num.
-console.log(typeof num.toString());
-// We will review "typeof" today
 
 
 /*
@@ -302,26 +192,17 @@ console.log(typeof num.toString());
 		false 		== false  	| true
 		0 			== false	| true
 		"" 			== false	| true
-		undefined 	== false	| true
-		NaN 		== false	| true  //var does not exist
-		null 		== false	| true
-
+		undefined 	== false	| true  //var does not exist
+		NaN 		== false	| true 
+	
 	So the following conditional fails...
 	-----------------------------------------------
 */
 
 console.log('------ MORE Booleans ----------');
 
-	var x = 9 * 'k';
-	console.log(x);
 
-	if (x){
-		console.log("It's true, the value is: ", x);
-	}else{
-		console.log("It's false, the value is: ", x);
-	}
-
-
+	
 /*
 	===============================================
 	MORE:  Arrays
@@ -333,76 +214,23 @@ console.log('------ MORE Arrays ----------');
 var arr1 = [1, 2, 3, 4, 5, 6, 7];
 var arr2 = ['a', 'b', 'c', 'd', 'e'];
 var arr3 = ['apple', 'orange', 50393, 7.324];
-
-// indexOf()
-//Returns the first (least) index of an element within the array equal 
-//to the specified value, or -1 if none is found.
-console.log(arr2.indexOf('c'));
-
-// join()
-// Joins all elements of an array into a string.
-console.log(arr2.join(', '));
-
-// pop()
-// Removes the last element from an array and returns that element
-var element = arr1.pop();
-console.log(element);
-
-// push()
-// Adds one or more elements to the end of an array and returns the new 
-//   length of the array
-arr2.push('f');
-console.log(arr2);
-
-// reverse()
-// Reverses the order of the elements of an array
-console.log(arr1.reverse());
-
-// splice()
-// Adds and/or removes elements from an array.
-console.log(arr1.splice(4, 2));   // NOTE: the array was reversed above
-console.log(arr1);
-
-// forEach()
-// Calls a function for each element in the array.
-arr1.forEach(function(element, index, array){
-	console.log('element', element);
-	console.log('index', index);
-	console.log('array', array);
-});
-
+	
 
 /*******************************************
-
 STUDENTS ACTIVITY 5:
 
 1.  combine the firstQtr and secondQtr arrays below and console.log the results
 2.  combine ALL three arrays below and console.log the results
+	- store this array in a variable called "combined".
 
-Use the combined variable for the below:
+Use the "combined" variable for the below:
 3.  join the array elements into a string and console.log the results
 4.  remove the last element of an array and console.log the results and the new array
 5.  use array "secondHalfYr", and reduce the array to "Sept" & "Oct" 
 	and console.log the results
 ********************************************/
 
-var firstQtr = ["Jan", "Feb", "Mar"];
-var secondQtr = ["Apr", "May", "Jun"];
-var secondHalfYr = ["Jul", "Aug", "Sept", "Oct", "Nov", "Dec"];
 
-var combined = firstQtr.concat(secondQtr);
-console.log("Concat 2 arrays: ", combined);
-
-var combined = firstQtr.concat(secondQtr, secondHalfYr);
-console.log("Concat 3 arrays: ", combined);
-
-console.log("Joined arrays :", combined.join());
-
-console.log("Took out Dec: ", combined.pop());
-console.log("Show Array: ", combined);
-
-var x = secondHalfYr.slice(2, 4);
-console.log("slice: ", x);
 
 
 /*
@@ -415,31 +243,12 @@ console.log("slice: ", x);
 
 console.log('------ MORE Operators - typeof() ----------');
 
-console.log( typeof 5);
-console.log( typeof "Hi" );
-
-var str1 = "hello";
-console.log( typeof str1);
-
-console.log( typeof true );
-console.log( typeof function(){} );
-console.log( typeof obj1);
-console.log( typeof [1,2,3,4,5]);
-
-console.log( typeof missingVariable);
-
-if ( typeof myString === 'undefined' ){
-	console.log("myString is undefined");
-}else{
-	console.log("myString is: ", myString);
-};
-
 
 /*
 	===============================================
 	MORE:  Conditionals (switch())
 	-----------------------------------------------
-
+	
 	- “if” conditionals are perfect for comparing several sets of varying conditions  
 	- switch statements will evaluate a single conditional expression and
 		then perform an equality check against possible cases
@@ -453,60 +262,25 @@ if ( typeof myString === 'undefined' ){
 		// statements1
 	} else {
 		// statements2
-	};
+	};	
 
 */
 
 console.log('------ MORE Conditionals - Switch ----------');
 
-//make sure to show "Mangoes"
-var fruit = "Chicken";
-
-switch (fruit) {
-	case "Oranges":
-		console.log("Oranges are $0.59 a pound.");
-		break;
-	case "Apples":
-		console.log("Apples are $0.32 a pound.");
-		break;
-	case "Bananas":
-		console.log("Bananas are $0.48 a pound.");
-		break;
-	case "Cherries":
-		console.log("Cherries are $3.00 a pound.");
-		break;
-	case "Mangoes":
-	case "Papayas":
-		console.log("Mangoes and papayas are $2.79 a pound.");
-		break;
-	default:
-		console.log("Sorry, we are out of " + fruit + ".");
-};
-
-
 /*******************************************
-    STUDENTS ACTIVITY 6:
+
+ STUDENTS ACTIVITY 6:
 
 	1.  create a "Switch" conditional that does the following:
 		a.  have a var named "age" initialized to a number
 		b.  if age 13 then console.log "child"
 			if age 18 then console.log "adult"
 			if no age then console.log "No answer"
-********************************************/
-	
-var age = 12;
 
-switch (age){
-	case 13:
-		console.log("Child");
-		break;
-	case 18:
-		console.log("Adult");
-		break;
-	default:
-		console.log("No Answer");
-		break;
-}
+
+********************************************/
+
 
 
 /*
@@ -522,19 +296,10 @@ switch (age){
 
 console.log('------ MORE Functions ----------');
 
-var bondsCars = function (){
-	return ['ferrari', 'lambo', 'vwBug'];
-};
-
-var cars = bondsCars();  //will return the array of values
-console.log('James Bond cars, ', cars);
-
 
 	/* 
 		Self Executing Functions
 	
-		this is what is opening closing this file
-
 		(function(){   //this is a basic function which includes () at end
 			//code goes here
 		})();          //the () tells the function to run immediately
@@ -565,7 +330,6 @@ console.log('James Bond cars, ', cars);
 			- common variable names for counters are i and x - most developers 
 				reserve these names for this purpose
 
-
 	WHILE LOOP:  while()
 		- the while loop is the simplest conditional loop
 		- before the code is executed, the condition is checked
@@ -577,17 +341,11 @@ console.log('James Bond cars, ', cars);
 		Basic While Loop:
 			while ( condition ) {
 				//code goes here
-			}				
-			
+			}			
 */
 console.log('------ While / Loop ----------');
 
-var numOfBeers = 10;
-while (numOfBeers > 0){
-	console.log(numOfBeers +' kegs on the wall.');
-	numOfBeers--;
-}
-
+	
 /*
 	===============================================
 	For Loop, prebuilt logic structure
@@ -612,9 +370,6 @@ while (numOfBeers > 0){
 
 console.log('------For Loop ----------');
 
-for (var beers = 10; beers > 0; beers-- ){
-	console.log(beers + ' bottles of beers on the wall.')
-}
 
 	/* 
 		array.Length
@@ -628,8 +383,6 @@ for (var beers = 10; beers > 0; beers-- ){
 			- the  .length property returns the count, which would be 5	
 	*/	
 
-var myNums = [1, 2, 3, 4, 5];
-console.log('length: ', myNums.length );	 //returns a “5”
 
 	/* 
 		using the for() loop with .length
@@ -648,11 +401,8 @@ console.log('length: ', myNums.length );	 //returns a “5”
 
 		- depending on the size of an array, it can be more efficient to 
 			save the array length in a variable, inside the first statement
-	*/ 
+	*/
 
-for (var i=0, j=myNums.length; i<j; i++){  //see the array above
-	console.log('1. length in for loop: ', myNums[i] );
-};	
 
 	/*
 		BREAK...
@@ -662,13 +412,7 @@ for (var i=0, j=myNums.length; i<j; i++){  //see the array above
 			break point, and perform no more iterations
 	*/
 
-for (var i=0, j=myNums.length; i<j; i++){  //see the array above
-	if (i === 3) {
-		console.log("testing out the break and it broke");
-		break;
-	};
-	console.log('2. length in for loop: ', myNums[i] );
-};
+
 
 	/*
 		CONTINUE...
@@ -678,89 +422,86 @@ for (var i=0, j=myNums.length; i<j; i++){  //see the array above
 			on to the next iteration
 	*/
 
-for (var i=0, j=myNums.length; i<j; i++){  //see the array above
-	if (i === 3) {
-		console.log("testing out the break and it broke");
-		continue;
-	};
-	console.log('3. length in for loop: ', myNums[i] );
-};
 
+/*******************************************
 
-	/*******************************************
-
-     STUDENTS ACTIVITY 7:
+ STUDENTS ACTIVITY 7:
 
 	1.  create an array with the following heros 
 		(Superman, Batman, Wolverine, Iceman)
 
-		a.  create a for loop using the slower method
+		a.  create a for loop using the slower method (3 parameters)
 			- in the loop just console.log the values
-		b.  create a for loop using the faster method
+		b.  create a for loop using the faster method (4 parameters)
 			- in the loop just console.log the values			
 
-	********************************************/
+********************************************/
 
-var heroes = [
-	'Superman',
-	'Batman',
-	'Wolverine',
-	'Iceman'
-];
-	
-for (var i=0, max=heroes.length; i<max; i++){ // Best Practices
-	console.log( heroes[i] );
-}
-
-for (var i=0; i<heroes.length; i++){ // Slower Version
-	console.log( heroes[i] );
-}
 
 
 /*******************************************
- STUDENTS ACTIVITY 8: (More Practice):
+ STUDENTS ACTIVITY 8:
 
-	1.  output "name" in lowercase
-	2.  output "name" in uppercase
-	3.  output the character in the 3rd index
-	4.  output the index number where the work "nice" us located
-	5.  output the characters in "name" between indexes 10 & 14
-	6.  create a array variable using "name", and output the array
-	7.  output the item in index 4
-	8.  join all elements of the array separated by a "|"
-	9.  output the array in reverse order
-	10. output the current array without the first item
-	11. output the array with a new item at the end of the array 
-		- add "NEW VALUE"
-	12. output the array without "NEW VALUE"
+	1.  create a function named 'avgNumbers'
+		- accept 1 parameter that will be an array of unlimited numbers
+		- find the average of all the numbers
+		- output the answer
+
+	2.  create a function named 'fullName'
+		- accept 2 parameters that are strings (firstname and lastname)
+		- return the name after it has been concatenated
+		- output the answer outside of the function
+
+	3.  create a function named 'wordCount'
+		- accept 1 parameter that is a long string of text
+		- return length of the array of string characters
+		- output the answer outside of the function
+
+	4.  create a function named 'charCount'
+		- accept 1 parameter that is a long string of text
+		- return length of the array of string characters
+		- output the answer outside of the function
+	
+	5.  create a function named 'vowelsInWord'
+		- accept 1 parameter that is a a one word string
+		- return the number of vowels in the word
+		- output the answer outside of the function
+		
+	 6.  create a function named 'findNum'
+		- accepts 2 parameters - 1. array of numbers, 2. boolean
+		- if the second parameter being passed is "false" then 
+			a. create an array with all of the odd numbers from 
+				the array
+		- else - create an array with all of the even numbers
+				from the array 		
+		- return the array
+		- output the answer outside of the function
+********************************************/
+console.log('------ FUNCTION DEVELOPMENT ----------');
+
+
+/*******************************************
+    STUDENTS ACTIVITY 9: (More Practice):
+
+     1.  output "name" in lowercase
+     2.  output "name" in uppercase
+     3.  output the character in the 3rd index
+     4.  output the index number where the work "nice" us located
+     5.  output the characters in "name" between indexes 10 & 14
+     6.  create a array variable using "name", and output the array
+     7.  output the item in index 4
+     8.  join all elements of the array separated by a "|"
+     9.  output the array in reverse order
+     10. output the current array without the first item
+     11. output the array with a new item at the end of the array
+     - add "NEW VALUE"
+     12. output the array without "NEW VALUE"
 ********************************************/
 
-console.log('------ PRACTICE ----------');
+    console.log('------ More PRACTICE ----------');
 
-var name = 'This is a nice change of pace';
+    var name = 'This is a nice change of pace';
 
-console.log(name);
-console.log(name.toLowerCase());
-console.log(name.toUpperCase());
 
-console.log(name.charAt(3));
-console.log("------------------");
-console.log(name.indexOf('nice'));
-console.log(name.slice(10,14));
-console.log(name.substring(10,14));
 
-var array1 = name.split(' ');
-console.log(array1);
-console.log(array1[4]);
-
-console.log(array1.join('|'));
-console.log(array1.reverse());
-
-console.log(array1.slice(1))
-
-console.log(array1.push('New Value'))
-console.log(array1);
-
-array1.pop();
-console.log(array1);
 })();
