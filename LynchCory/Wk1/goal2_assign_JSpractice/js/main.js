@@ -39,7 +39,7 @@
          - else - create an array with all of the even numbers
             from the array
          - return the array
-         - console.log the answer outside of the function             //
+         - console.log the answer outside of the function
      ********************************************/
 
     console.log('------ Goal2: Assignment: JavaScript Practice ----------');
