@@ -31,7 +31,6 @@ console.log('------Objects ----------');
 
 //{KEY : Value} pairings,
 
-person = {name:'bond', age:35, secretAgent:true}
 
 
 /* accessing object properties
@@ -43,22 +42,13 @@ person = {name:'bond', age:35, secretAgent:true}
      - also keep in mind that since the keys can be strings, you could access the keys using string variables
  */
 
-var personAge = 'age';
-console.log(person.name, person[personAge], person['secretAgent']);
 
 // setter
 
-person['age'] = 40;
-person.name = 'JamesBond';
 
-console.log(person);
 
 //nested objects
 
-person = {birthday:{month:02, day:12}, name:'bond'};
-
-console.log(person['birthday']['month']);
-console.log(person)
 
 
 
@@ -68,20 +58,7 @@ console.log(person)
 
 console.log('------Object within an object, Arrays, Function ----------');
 
-var thatGuy = {
-	name:'JamesBond',
-	course: 'PWA1',
-	address:{
-		num: 3300,
-		street: 'University',
-		city: 'Orlando',
-		cornerOf: ['University', 'Semoran'],
-	} ,
-	showMyAddress: function(){
-		var x = this.address.street + ', ' + this.address.city;
-		return x;
-	}
-}
+
 
 
 
@@ -97,14 +74,7 @@ console.log('------Objects - properties & methods ----------');
 
 //Method 1 "Basic"
 
-var fsStudent = {};
-fsStudent.age = 22;
-fsStudent.career = 'Wed dev';
-fsStudent.sayHello = function(){
-	console.log("Hello!");
-}
 
-console.log(fsStudent);
 
 
 // above, we first initialize the object, then we created 2 properties 
@@ -114,11 +84,7 @@ console.log(fsStudent);
 // we can also access the methods and properties of an object using  [ ] , 
 // 	by using their name as a string - all of the below are valid:
 
-console.log('Method 1');
-fsStudent.sayHello();
-fsStudent['sayHello'];
-console.log(fsStudent.age);
-console.log(fsStudent['age']);
+
 
 
 /* --------------
@@ -130,19 +96,7 @@ Method 2 "OBJECT Literal"
 	- below is the same object as in Method 1
 */
 
-var fsStudent = {
-	age: 22,
-	career: 'Web Dev',
-	sayHello: function(){
-		console.log('Hello!');
-	}
-};
 
-console.log('Method 2');
-fsStudent.sayHello();
-fsStudent['sayHello'];
-console.log(fsStudent.age);
-console.log(fsStudent['age']);
 
 
 //---------------------------------------------
@@ -168,29 +122,6 @@ console.log('------ STUDENT ACTIVITY - ANSWERS BELOW ----------');
 // objects w/ array
 // this is integrating multiple data types - object with an array of objects
 
-var obj = {
-	schoolName: 'Full Sail',
-	address: '1234 Street st',
-	studentCount: 12,
-	students: [
-		{name: 'Joe', GPA: 3.5, classes: ['class1', 'class2']},
-		{name: 'Bob', GPA: 3.6, classes: ['class3', 'class4']},
-		{name: 'Der', GPA: 3.3, classes: ['class5', 'class6']}
-	]
-};
-
-console.log('Objects withe the array of the objects');
-console.log(obj.schoolName);
-console.log(obj['schoolName']);
-
-var newCnt = 'studentCount';
-console.log(obj[newCnt]);
-
-fieldName1 = 'address';
-console.log(obj[fieldName1]);
-
-console.log("James Bond\'s GPA: ", obj.students[2].GPA);
-console.log("James Bond\'s GPA: ", obj['students'][2]['GPA']);
 
 
 /* ----------------------------------------------------------------------------
@@ -202,16 +133,12 @@ console.log("James Bond\'s GPA: ", obj['students'][2]['GPA']);
 		
 ----------------------------------------------------------------------------- */
 
-var gradeAvg = function(){
-	//Get average GPA
-	var count = 0;
-	var total = 0;
-	for (var i = 0; i < obj.students.length; i++) {
-		count++;
-		total = total + obj.students[i]['GPA'];
-	}
-	return total/count;
-}
+
+
+/*
+
+******************************************************************************/
+
 
 /* ===============================================================
 	The for-in object loop
@@ -222,12 +149,7 @@ var gradeAvg = function(){
 	}
 */
 
-var students = {name: 'James Bond', gender: 'male', job: 'student'};
 
-for(var key in students){
-	console.log('Key Name: ', key);
-	console.log("Value of the Key: [',key,']:", students[key]);
-}
 
 
 /*
@@ -263,11 +185,6 @@ for(var key in students){
 */
 console.log('------ objects - converting datatypes ----------');
 
-var myNum = 1;
-myString = String(myNum);
-console.log('myString', typeof myString, myString);
-myBool = Boolean(myString);
-console.log('myBool: ', typeof myBool, myBool);
 
 
 /*
@@ -290,15 +207,6 @@ console.log('myBool: ', typeof myBool, myBool);
 //
 console.log('------ MORE Object examples - Objects/Functions ----------');	
 	
-	var fn = function(name, course){
-		return{
-			sayHi: function(){
-				console.log("My name is " + name + " in course " + course);
-			}
-		}
-	};
-
-fn("James Bond", "PWA1").sayHi();
 // showing function call and using a method
 
 
@@ -328,7 +236,6 @@ console.log(document.body);
 console.log(document.head);
 */
 
-
 /*
 	==================================================================
 	document.getElementById(string);
@@ -347,8 +254,7 @@ console.log(document.head);
 
 console.log('------------ getElementById -------------------');
 
-var playBox = document.getElementById('playBox');
-console.log(playbox);
+
 
 
 /*
@@ -361,14 +267,7 @@ console.log(playbox);
 
 console.log('------------ getElementsByTagName -------------------');
 
-var anchors = document.getElementsByTagName('a');
-console.log(anchors);
 
-console.log(anchors[1]);
-
-for(i=0, max=anchors.length; i<max; i++){
-	console.log(anchors[i]);
-}
 
 
 /*
@@ -388,17 +287,7 @@ for(i=0, max=anchors.length; i<max; i++){
 
 console.log('------------ querySelectorAll -------------------');
 
-var nav = document.querySelectorAll('#nav');
-console.log(nav);
 
-var navLinks = document.querySelectorAll('#nav li');
-console.log(navLinks);
-
-var navLast = document.querySelectorAll('#nav li:last-child');
-console.log(navLast)
-
-var cf = document.querySelectorAll('.clearfix');
-console.log(cf);
 
 
 /*
@@ -411,8 +300,7 @@ console.log(cf);
 		- RETURNS a single DOM object.
 */
 
-var nav = document.querySelector('#nav');
-console.log(nav);
+
 
 
 
@@ -435,12 +323,9 @@ console.log(nav);
 	Will be used in ALL future assignments.
 */
 
-var apple = document.querySelectorAll('#nav li a')[2];
-console.log(apple);
 
-console.log(apple.parentNode);
 
-console.log(apple.parentNode.childNodes);
+
 
 /*
 	==================================================================
@@ -459,15 +344,8 @@ console.log(apple.parentNode.childNodes);
 	Sample Link: http://www.instructables.com/files/deriv/FJI/WGSW/FPIUQQ3K/FJIWGSWFPIUQQ3K.MEDIUM.jpg
 */
 
-var navLinks = document.querySelectorAll('#nav li');
-for(i=0, max=navLinks.length; i<max;i++){
-	var href = navLinks[i].firstChild.getAttribute('href');
-	console.log('Manipulation HREF: ', href);
 
-	var aClass = navLinks[i].firstChild.getAttribute('class');
-	console.log('Manipulation CLASS: ', aClass);
 
-}
 
 
 /*
@@ -486,9 +364,8 @@ for(i=0, max=navLinks.length; i<max;i++){
 
 console.log('------------ Manipulating CSS Classes -------------------');
 
-		navLinks[2].firstChild.setAttribute('class', 'navitem active');	
+	
 
-		var changeClass = navLinks[2].firstChild.setAttribute('href', 'http://google.com');
 
 /*
 	==================================================================
@@ -500,14 +377,7 @@ console.log('------------ Manipulating CSS Classes -------------------');
 */
 
 
-console.log('------------- Manipulating HTML -----------------------');
 
-	var navLinks = document.querySelectorAll('#nav a');
-	console.log(navLinks[2]);
-
-	console.log(navLinks[2].innerHTML);
-
-	navLinks[2].innerHTML = 'This Link Rocks!';
 
 
 /*
@@ -548,19 +418,11 @@ console.log('------------ DOM Events -------------------');
 // this just console.log's when a click occurs
 
 
-	
+
 
 
 */
 
-	for(i=0, max=nav.length; i<max;i++){
-		console.log(nav[i]);
-		nav[i].onclick = function(e){
-			console.log(e)
-			e.preventDefault();
-			return false;
-		}
-	}
 
 /*
 	==================================================================
@@ -596,18 +458,6 @@ console.log('------------ DOM Events Ex 2 -------------------');
 
 */ 
 
-	for(i=0, max=nav.length; i<max; i++){
-		nav[i].onclick = function(e){
-			for(var ii=0, max2=nav.length;ii<max;i++){
-				nav[ii].setAttribute('class', 'navitem');
-			}
-			
-			this.setAttribute('class', 'navitem active');
-
-			e.preventDefault();
-			return false;
-		}
-	}
 
 /*
 console.log('------------ DOM Events Ex 3 -------------------');
