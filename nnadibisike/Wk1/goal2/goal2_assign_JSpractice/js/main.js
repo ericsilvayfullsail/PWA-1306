@@ -54,6 +54,8 @@
         {
            avg = arr[i]++;
         }
+        avg /= arr.length;
+        
         return avg;
     };
 
