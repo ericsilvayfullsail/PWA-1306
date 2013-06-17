@@ -12,7 +12,7 @@ var playerOneScore = document.querySelector("#kratos p");
 //Player Two Info
 var playerTwo = {name:"Megatron", health:100, damage:20};
 var playerTwoHalfDamage = playerTwo.damage / 2;
-var playerTwoScore = document.querySelectorAll("#kabal p");
+var playerTwoScore = document.querySelector("#kabal p");
 
 var roundNum = document.querySelector("h4");
 roundNum.innerHTML = "Click To Start Fight";
