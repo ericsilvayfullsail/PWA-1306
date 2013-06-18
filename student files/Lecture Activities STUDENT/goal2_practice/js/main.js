@@ -124,12 +124,22 @@ console.log('------Recap Conditionals ----------');
 console.log('------Recap Functions ----------');
 
     //	1.  BASIC FUNCTION:
-
-
+	var myctr = 1;
+	function myCounter(){
+		myctr++;
+		console.log("Counter: " + myctr);
+		
+	}
+	myCounter();
 
     //	2.  ANONYMOUS FUNCTION
-
-
+		var myctr = 1;
+	var myCounter = function(){
+		myctr++;
+		console.log("Counter: " + myctr);	
+	}
+	
+	myCounter();
 
     //Anonymous passing arguments
 
@@ -152,19 +162,28 @@ var str1 = 'I love JavaScript! ';
 var str2 = 'JavaScript loves me!';
 var abc = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 
+console.log(str1.charAt(4));
 
+console.log(str2.indexOf('m'));
+
+console.log(str1.length);
+
+console.log(abc.split(""));
 //STUDENT ACTIVITY 1:
 // Use substr() to console log 'JavaScript!' from str1.
-
+// Must use the index numbers of the part you want show
+console.log(str1.substr(7,11));
 
 //STUDENT ACTIVITY 2:
 // Use substring() to console log 'JavaScript' from str2.
-
+// Must use the index numbers of the part you want show
+console.log(str2.substring(0,10));
 
 //STUDENT ACTIVITY 3:
 // 1. Use toLowerCase() to console log the str1 all in lowercase letters.
 // 2. Use toUpperCase() to console log the str1 all in uppercase letters.
-
+console.log(str1.toLowerCase());
+console.log(str1.toUpperCase());
 
 
 /*
@@ -175,11 +194,17 @@ var abc = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 
 console.log('------ MORE Numbers ----------');
 
+var num = 45678;
+	var dec = 33.1234456;
+	
+	console.log(num.toExponential(2));
+	
+	console.log(dec.toPrecision(4));
 
 //STUDENT ACTIVITY 4:
 // Use ??? to console dec with two decimals.
-
-
+	console.log(dec.toFixed(2));
+	
 /*
 	===============================================
 	MORE:  Booleans
@@ -200,8 +225,14 @@ console.log('------ MORE Numbers ----------');
 */
 
 console.log('------ MORE Booleans ----------');
-
-
+	// var x = 9 = 'k';
+	// console.log(x);
+// 	
+	// if (x) {
+		// console.log("It's true, the value is: ", x );
+	// }else{
+		// console.log("It's true, the value is: ", x );
+	// };
 	
 /*
 	===============================================
@@ -214,7 +245,23 @@ console.log('------ MORE Arrays ----------');
 var arr1 = [1, 2, 3, 4, 5, 6, 7];
 var arr2 = ['a', 'b', 'c', 'd', 'e'];
 var arr3 = ['apple', 'orange', 50393, 7.324];
-	
+
+console.log(arr2.indexOf('c'));	
+
+console.log(arr2.join(','));	
+
+var element = arr1.pop();
+console.log(element);
+
+arr2.push("f");
+console.log(arr2);	
+
+console.log(arr1.reverse());	
+
+console.log(arr1.splice(4,2));	
+console.log(arr1);	
+
+
 
 /*******************************************
 STUDENTS ACTIVITY 5:
@@ -280,7 +327,21 @@ console.log('------ MORE Conditionals - Switch ----------');
 
 
 ********************************************/
-
+	var age = 12
+	
+	switch (age){
+		case "13":
+		console.log("child");
+		break;
+		
+		case "18":
+		console.log("adult");
+		break;
+		
+		default:
+		console.log("No answer");
+		break;
+	}
 
 
 /*
@@ -344,7 +405,12 @@ console.log('------ MORE Functions ----------');
 			}			
 */
 console.log('------ While / Loop ----------');
-
+	var numBeers = 10;
+	
+	while(numBeers > 0){
+		console.log(numBeers , " beers to to go. . .");
+		numBeers--;
+	}
 	
 /*
 	===============================================
@@ -369,7 +435,9 @@ console.log('------ While / Loop ----------');
 */
 
 console.log('------For Loop ----------');
-
+	for (var beers=10; beers < 10; beers--) {
+		console.log(numBeers , " beers to to go. . .");
+	}
 
 	/* 
 		array.Length
@@ -461,6 +529,24 @@ console.log('------For Loop ----------');
 
     var name = 'This is a nice change of pace';
 
-
+	console.log(name);
+    console.log(name.toLowerCase());
+    console.log(name.toUpperCase());
+    console.log(name.charAt(3));
+    console.log(name.indexOf('nice'));
+    
+    var arr = name.split('');
+    console.log(arr);
+    console.log(arr[4]);
+    
+    console.log(arr.join('|'));
+    console.log(arr.reverse());
+    console.log(arr.slice(1));
+    
+    console.log(arr.push("NEW VALUE"));
+    console.log(arr);
+    
+    arr.pop();
+    console.log(arr);
 
 })();

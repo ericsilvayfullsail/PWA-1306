@@ -402,7 +402,9 @@ console.log('------For Loop ----------');
 		- depending on the size of an array, it can be more efficient to 
 			save the array length in a variable, inside the first statement
 	*/
-
+                 for (var i = 0, j = myNums.length; i<j; i++){
+                     console.log('1. length of the');
+                 }
 
 	/*
 		BREAK...
@@ -411,7 +413,14 @@ console.log('------For Loop ----------');
 		- by using the "break" statement, any loop will stop running at the 
 			break point, and perform no more iterations
 	*/
+    for (var i = 0, j = myNums.length; i<j; i++){
+       if(1===3){
+           console.log('1. length of the');
+           break;
+       }
 
+        console.log('2. length of the');
+    }
 
 
 	/*
@@ -437,7 +446,20 @@ console.log('------For Loop ----------');
 
 ********************************************/
 
+            var heros = [
+                "Superman",
+                "Batman",
+                "Spiderman",
+                "Thor",
+                "Hulk"
+             ]
+    for(var i = 0; i < heros.length; i++){
+      console.log(heros[i])
+    }
 
+    for(var i = 0, max = heros.length; i < max; i++){
+        console.log(heros[i])
+    }
 
 /*******************************************
  STUDENTS ACTIVITY 8:
@@ -502,6 +524,18 @@ console.log('------ FUNCTION DEVELOPMENT ----------');
 
     var name = 'This is a nice change of pace';
 
+    console.log(name.toLowerCase());
+    console.log(name.toUpperCase());
+    console.log(name.charAt(3));
+    console.log(name.indexOf('nice'));
 
+    var arr = [name.split()];
+    console.log(arr);
+    console.log(arr[4]);
+    console.log(arr.reverse());
+    console.log(arr.slice(0));
+    console.log(arr);
+    console.log(arr.push("NEW VALUE"));
+    console.log(arr.splice(arr.length-1));
 
 })();
